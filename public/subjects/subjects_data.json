@@ -1,119 +1,119 @@
 [
-    {
-        "tecnicas_de_programacion": {
-            "nombre": "",
-            "codigo": "1.1.1",
-            "año_cuatri": "1° 1°"
-        },
-        "elementos_de_analisis_matematico": {
-            "nombre": "",
-            "codigo": "1.1.2",
-            "año_cuatri": "1° 1°"
-        },
-        "administracion_gestion_de_bases_de_datos": {
-            "nombre": "",
-            "codigo": "1.1.3",
-            "año_cuatri": "1° 1°"
-        },
-        "logica_computacional": {
-            "nombre": "",
-            "codigo": "1.1.4",
-            "año_cuatri": "1° 1°"
-        },
-        "desarrollo_de_sistemas_orientado_a_objetos": {
-            "nombre": "",
-            "codigo": "1.2.1",
-            "año_cuatri": "1° 2°"
-        },
-        "modelado_diseño_de_software": {
-            "nombre": "",
-            "codigo": "1.2.2",
-            "año_cuatri": "1° 2°"
-        },
-        "estadistica_y_probabilidad": {
-            "nombre": "",
-            "codigo": "1.2.3",
-            "año_cuatri": "1° 2°"
-        },
-        "ingles": {
-            "nombre": "",
-            "codigo": "1.2.4",
-            "año_cuatri": "1° 2°"
-        },
-        "aproximacion_al_campo_laboral": {
-            "nombre": "",
-            "codigo": "1.2.5",
-            "año_cuatri": "1° 2°"
-        },
-        "desarrollo_de_aplicaciones_moviles": {
-            "nombre": "",
-            "codigo": "2.1.1",
-            "año_cuatri": "2° 1°"
-        },
-        "metodologia_de_pruebas_de_sistemas": {
-            "nombre": "",
-            "codigo": "2.1.2",
-            "año_cuatri": "2° 1°"
-        },
-        "tecnologias_de_la_informacion_y_la_comunicacion": {
-            "nombre": "",
-            "codigo": "2.1.3",
-            "año_cuatri": "2° 1°"
-        },
-        "taller_de_comunicacion": {
-            "nombre": "",
-            "codigo": "2.1.4",
-            "año_cuatri": "2° 1°"
-        },
-        "desarrollo_de_sistemas_de_info_orientados_a_gestion_apoyo_de_decisiones": {
-            "nombre": "",
-            "codigo": "2.1.5",
-            "año_cuatri": "2° 1°"
-        },
-        "desarrollo_de_sistemas_web_backend": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "desarrollo_de_sistemas_web_frontend": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "ingenieria_de_software": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "desarrollo_implementacion_de_sistemas_en_la_nube": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "programacion_sobre_reder": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "seminario_profundizacion_actualizacion": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "gestion_de_proyectos": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "trabajo_tecnologia_sociedad": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        },
-        "proyecto_integrador": {
-            "nombre": "",
-            "codigo": "",
-            "año_cuatri": ""
-        }
+  {
+    "tecnicas_de_programacion": {
+      "nombre": "Técnicas de Programación",
+      "codigo": "1.1.1",
+      "año_cuatri": "1° 1°"
+    },
+    "elementos_de_analisis_matematico": {
+      "nombre": "Elementos de Análisis Matemático",
+      "codigo": "1.1.2",
+      "año_cuatri": "1° 1°"
+    },
+    "administracion_gestion_de_bases_de_datos": {
+      "nombre": "Administración y Gestión de Bases de Datos",
+      "codigo": "1.1.3",
+      "año_cuatri": "1° 1°"
+    },
+    "logica_computacional": {
+      "nombre": "Lógica Computacional",
+      "codigo": "1.1.4",
+      "año_cuatri": "1° 1°"
+    },
+    "desarrollo_de_sistemas_orientado_a_objetos": {
+      "nombre": "Desarrollo de Sistemas Orientado a Objetos",
+      "codigo": "1.2.1",
+      "año_cuatri": "1° 2°"
+    },
+    "modelado_diseño_de_software": {
+      "nombre": "Modelado y Diseño de Software",
+      "codigo": "1.2.2",
+      "año_cuatri": "1° 2°"
+    },
+    "estadistica_y_probabilidad": {
+      "nombre": "Estadística y Probabilidades para el Desarrollo de Software",
+      "codigo": "1.2.3",
+      "año_cuatri": "1° 2°"
+    },
+    "ingles": {
+      "nombre": "Inglés",
+      "codigo": "1.2.4",
+      "año_cuatri": "1° 2°"
+    },
+    "aproximacion_al_campo_laboral": {
+      "nombre": "Aproximación al mundo laboral",
+      "codigo": "1.2.5",
+      "año_cuatri": "1° 2°"
+    },
+    "desarrollo_de_aplicaciones_moviles": {
+      "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+      "codigo": "2.1.1",
+      "año_cuatri": "2° 1°"
+    },
+    "metodologia_de_pruebas_de_sistemas": {
+      "nombre": "Metodología de Pruebas de Sistemas",
+      "codigo": "2.1.2",
+      "año_cuatri": "2° 1°"
+    },
+    "tecnologias_de_la_informacion_y_la_comunicacion": {
+      "nombre": "Tecnologías de la Información y de la Comunicación",
+      "codigo": "2.1.3",
+      "año_cuatri": "2° 1°"
+    },
+    "taller_de_comunicacion": {
+      "nombre": "Taller de Comunicación",
+      "codigo": "2.1.4",
+      "año_cuatri": "2° 1°"
+    },
+    "desarrollo_de_sistemas_de_info_orientados_a_gestion_apoyo_de_decisiones": {
+      "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones",
+      "codigo": "2.1.5",
+      "año_cuatri": "2° 1°"
+    },
+    "desarrollo_de_sistemas_web_backend": {
+      "nombre": "Desarrollo de Sistemas Web (Back End)",
+      "codigo": "2.2.1",
+      "año_cuatri": "2° 2°"
+    },
+    "desarrollo_de_sistemas_web_frontend": {
+      "nombre": "Desarrollo de Sistemas Web (Front End)",
+      "codigo": "2.2.2",
+      "año_cuatri": "2° 2°"
+    },
+    "ingenieria_de_software": {
+      "nombre": "Ingeniería de Software",
+      "codigo": "2.2.3",
+      "año_cuatri": "2° 2°"
+    },
+    "desarrollo_implementacion_de_sistemas_en_la_nube": {
+      "nombre": "Desarrollo e implementación de sistemas en la nube",
+      "codigo": "2.2.4",
+      "año_cuatri": "2° 2°"
+    },
+    "programacion_sobre_redes": {
+      "nombre": "Programación sobre Redes",
+      "codigo": "3.1.1",
+      "año_cuatri": "3° 1°"
+    },
+    "seminario_de_profundizacion_actualizacion": {
+      "nombre": "Seminario de Profundización y/o Actualización",
+      "codigo": "3.1.1",
+      "año_cuatri": "3° 1°"
+    },
+    "gestion_de_proyectos": {
+      "nombre": "Gestión de Proyectos",
+      "codigo": "3.1.3",
+      "año_cuatri": "3° 1°"
+    },
+    "trabajo_tecnologia_sociedad": {
+      "nombre": "Trabajo, Tecnología y Sociedad",
+      "codigo": "3.1.4",
+      "año_cuatri": "3° 1°"
+    },
+    "proyecto_integrador": {
+      "nombre": "Proyecto Integrador",
+      "codigo": "3.1.5",
+      "año_cuatri": "3° 1°"
     }
+  }
 ]
