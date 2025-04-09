@@ -1,119 +1,119 @@
-[
-  {
-    "tecnicas_de_programacion": {
-      "nombre": "Técnicas de Programación",
+{
+  "subjects": [
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.1",
-      "año_cuatri": "1° 1°"
+      "nombre": "Técnicas de Programación"
     },
-    "elementos_de_analisis_matematico": {
-      "nombre": "Elementos de Análisis Matemático",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.2",
-      "año_cuatri": "1° 1°"
+      "nombre": "Elementos de Análisis Matemático"
     },
-    "administracion_gestion_de_bases_de_datos": {
-      "nombre": "Administración y Gestión de Bases de Datos",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.3",
-      "año_cuatri": "1° 1°"
+      "nombre": "Administración y Gestión de Bases de Datos"
     },
-    "logica_computacional": {
-      "nombre": "Lógica Computacional",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.4",
-      "año_cuatri": "1° 1°"
+      "nombre": "Lógica Computacional"
     },
-    "desarrollo_de_sistemas_orientado_a_objetos": {
-      "nombre": "Desarrollo de Sistemas Orientado a Objetos",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.1",
-      "año_cuatri": "1° 2°"
+      "nombre": "Desarrollo de Sistemas Orientado a Objetos"
     },
-    "modelado_diseño_de_software": {
-      "nombre": "Modelado y Diseño de Software",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.2",
-      "año_cuatri": "1° 2°"
+      "nombre": "Modelado y Diseño de Software"
     },
-    "estadistica_y_probabilidad": {
-      "nombre": "Estadística y Probabilidades para el Desarrollo de Software",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.3",
-      "año_cuatri": "1° 2°"
+      "nombre": "Estadística y Probabilidades para el Desarrollo de Software"
     },
-    "ingles": {
-      "nombre": "Inglés",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.4",
-      "año_cuatri": "1° 2°"
+      "nombre": "Inglés"
     },
-    "aproximacion_al_campo_laboral": {
-      "nombre": "Aproximación al mundo laboral",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.5",
-      "año_cuatri": "1° 2°"
+      "nombre": "Aproximación al mundo laboral"
     },
-    "desarrollo_de_aplicaciones_moviles": {
-      "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.1",
-      "año_cuatri": "2° 1°"
+      "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles"
     },
-    "metodologia_de_pruebas_de_sistemas": {
-      "nombre": "Metodología de Pruebas de Sistemas",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.2",
-      "año_cuatri": "2° 1°"
+      "nombre": "Metodología de Pruebas de Sistemas"
     },
-    "tecnologias_de_la_informacion_y_la_comunicacion": {
-      "nombre": "Tecnologías de la Información y de la Comunicación",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.3",
-      "año_cuatri": "2° 1°"
+      "nombre": "Tecnologías de la Información y de la Comunicación"
     },
-    "taller_de_comunicacion": {
-      "nombre": "Taller de Comunicación",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.4",
-      "año_cuatri": "2° 1°"
+      "nombre": "Taller de Comunicación"
     },
-    "desarrollo_de_sistemas_de_info_orientados_a_gestion_apoyo_de_decisiones": {
-      "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.5",
-      "año_cuatri": "2° 1°"
+      "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones"
     },
-    "desarrollo_de_sistemas_web_backend": {
-      "nombre": "Desarrollo de Sistemas Web (Back End)",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.1",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo de Sistemas Web (Back End)"
     },
-    "desarrollo_de_sistemas_web_frontend": {
-      "nombre": "Desarrollo de Sistemas Web (Front End)",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.2",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo de Sistemas Web (Front End)"
     },
-    "ingenieria_de_software": {
-      "nombre": "Ingeniería de Software",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.3",
-      "año_cuatri": "2° 2°"
+      "nombre": "Ingeniería de Software"
     },
-    "desarrollo_implementacion_de_sistemas_en_la_nube": {
-      "nombre": "Desarrollo e implementación de sistemas en la nube",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.4",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo e implementación de sistemas en la nube"
     },
-    "programacion_sobre_redes": {
-      "nombre": "Programación sobre Redes",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.1",
-      "año_cuatri": "3° 1°"
+      "nombre": "Programación sobre Redes"
     },
-    "seminario_de_profundizacion_actualizacion": {
-      "nombre": "Seminario de Profundización y/o Actualización",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.1",
-      "año_cuatri": "3° 1°"
+      "nombre": "Seminario de Profundización y/o Actualización"
     },
-    "gestion_de_proyectos": {
-      "nombre": "Gestión de Proyectos",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.3",
-      "año_cuatri": "3° 1°"
+      "nombre": "Gestión de Proyectos"
     },
-    "trabajo_tecnologia_sociedad": {
-      "nombre": "Trabajo, Tecnología y Sociedad",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.4",
-      "año_cuatri": "3° 1°"
+      "nombre": "Trabajo, Tecnología y Sociedad"
     },
-    "proyecto_integrador": {
-      "nombre": "Proyecto Integrador",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.5",
-      "año_cuatri": "3° 1°"
+      "nombre": "Proyecto Integrador"
     }
-  }
-]
+  ]
+}
