@@ -19,18 +19,27 @@ const Materias_List_Item = ({ ...subjects_p }) => {
                                 <p>Código: {subject.codigo}</p>
                                 <span>{subject.año_cuatri}</span>
                                 <span>{subject.estado}</span>
-                                <p className='materias__item-detalles' >
-                                    {
-                                        (subject.estado === 'Pendiente' || subject.estado === 'En curso')
-                                            ? null
-                                            : <span>Nota {subject.nota}</span>
-                                    }
 
-                                    {
-                                        subject.tiene_apuntes ? <span>📚 Apuntes</span> : null
-                                    }
+                                {
+                                    (subject.nota && subject.tiene_apuntes)
+                                        ? <>
+                                            <p className='materias__item-detalle'>
+                                                <span>Nota {subject.nota}</span>
+                                                <span>📚 Apuntes</span>                                                </p>
+                                        </>
+                                        : (subject.nota && !(subject.tiene_apuntes))
+                                            ?
+                                            <p className='materias__item-nota'>
+                                                <span>Nota {subject.nota}</span>
+                                            </p>
+                                            : (!(subject.nota) && (subject.tiene_apuntes))
+                                                ?
+                                                <p className='materias__item-apuntes'>
+                                                    <span>📚 Apuntes</span>
+                                                </p>
+                                                : null
+                                }
 
-                                </p>
                             </div>
                         </li>
                     )

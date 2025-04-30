@@ -26,8 +26,8 @@
       "nombre": "Administración y Gestión de Bases de Datos",
       "estado": "En curso",
       "año_cursada": "2025",
-      "nota": 0,
-      "tiene_apuntes": false,
+      "nota": null,
+      "tiene_apuntes": true,
       "link_apuntes": ""
     },
     {
@@ -46,7 +46,7 @@
       "nombre": "Desarrollo de Sistemas Orientado a Objetos",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -56,7 +56,7 @@
       "nombre": "Modelado y Diseño de Software",
       "estado": "En curso",
       "año_cursada": "2025",
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": true,
       "link_apuntes": ""
     },
@@ -66,7 +66,7 @@
       "nombre": "Estadística y Probabilidades para el Desarrollo de Software",
       "estado": "En curso",
       "año_cursada": "2025",
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -76,7 +76,7 @@
       "nombre": "Inglés",
       "estado": "En curso",
       "año_cursada": "2025",
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -86,7 +86,7 @@
       "nombre": "Aproximación al mundo laboral",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -96,7 +96,7 @@
       "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -106,7 +106,7 @@
       "nombre": "Metodología de Pruebas de Sistemas",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -116,7 +116,7 @@
       "nombre": "Tecnologías de la Información y de la Comunicación",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -126,7 +126,7 @@
       "nombre": "Taller de Comunicación",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -136,7 +136,7 @@
       "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -146,7 +146,7 @@
       "nombre": "Desarrollo de Sistemas Web (Back End)",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -156,7 +156,7 @@
       "nombre": "Desarrollo de Sistemas Web (Front End)",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -166,7 +166,7 @@
       "nombre": "Ingeniería de Software",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -176,7 +176,7 @@
       "nombre": "Desarrollo e implementación de sistemas en la nube",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -186,7 +186,7 @@
       "nombre": "Programación sobre Redes",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -196,7 +196,7 @@
       "nombre": "Seminario de Profundización y/o Actualización",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -206,7 +206,7 @@
       "nombre": "Gestión de Proyectos",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
@@ -216,7 +216,7 @@
       "nombre": "Trabajo, Tecnología y Sociedad",
       "estado": "Pendiente",
       "año_cursada": null,
-      "nota": 0,
+      "nota": null,
       "tiene_apuntes": false,
       "link_apuntes": ""
     },
