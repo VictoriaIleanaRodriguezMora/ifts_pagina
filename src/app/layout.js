@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import './globals.css'; // Opcional: para estilos
+import './styles/globals.scss'; // Import global Sass styles
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         {/* Barra de navegación */}
-        <nav style={{ padding: '20px', background: '#f0f0f0' }}>
+        <nav>
           <Link href="/" className={pathname === '/' ? 'active' : ''}>
             Home
           </Link>
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         </nav>
 
         {/* Contenido de las páginas */}
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );

@@ -6,9 +6,11 @@ const subjects = degree_in_software_development.subjects
 const Materias_List = () => {
     return (
         <>
-            <ul>
-                <Materias_List_Item subjects_p={subjects} />
-            </ul>
+            <div id='materias_container' >
+                <ul id="materias_lista" >
+                    <Materias_List_Item subjects_p={subjects} />
+                </ul>
+            </div>
         </>
     )
 }
