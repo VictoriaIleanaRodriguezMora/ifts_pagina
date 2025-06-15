@@ -8,6 +8,14 @@ const Materias_List_Item = ({ ...subjects_p }) => {
     // if (condition) {
 
     // }
+
+    const renderDetailContent = (arraySubjects) => {
+        
+        const tieneNotaApuntes = 0
+        return
+    }
+
+
     return (
         <>
             {
@@ -22,11 +30,11 @@ const Materias_List_Item = ({ ...subjects_p }) => {
 
                                 {
                                     (subject.nota && subject.tiene_apuntes)
-                                        ? <>
-                                            <p className='materias__item-detalle'>
-                                                <span>Nota {subject.nota}</span>
-                                                <span>📚 Apuntes</span>                                                </p>
-                                        </>
+                                        ?
+                                        <p className='materias__item-detalle'>
+                                            <span>Nota {subject.nota}</span>
+                                            <span>📚 Apuntes</span>
+                                        </p>
                                         : (subject.nota && !(subject.tiene_apuntes))
                                             ?
                                             <p className='materias__item-nota'>
@@ -34,7 +42,7 @@ const Materias_List_Item = ({ ...subjects_p }) => {
                                             </p>
                                             : (!(subject.nota) && (subject.tiene_apuntes))
                                                 ?
-                                                <p className='materias__item-apuntes'>
+                                                <p className='materias__item-apuntes only_child'>
                                                     <span>📚 Apuntes</span>
                                                 </p>
                                                 : null
