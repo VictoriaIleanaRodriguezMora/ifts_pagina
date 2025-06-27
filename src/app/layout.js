@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="es">
-      <body>
+      <body suppressHydrationWarning>
         {/* Barra de navegación */}
         <nav>
           <Link href="/" className={pathname === '/' ? 'active' : ''}>

@@ -1,13 +1,23 @@
+/* Fuentes */
+/* Fuentes */
+
+/* Estilos raiz*/
+body {
+  background-color: rgb(63, 71, 204);
+}
+/* Estilos raiz*/
+
+/* Materias */
 #materias_container {
   padding: 2%;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(63, 71, 204);
 
   #materias_lista {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: aqua;
+    // background-color: rgb(21, 2, 105);
 
     li {
       list-style: none;
@@ -18,12 +28,36 @@
         font-size: 20px;
         // border: 2px solid red;
         border-radius: 12px;
-        background-color: rgb(5, 118, 224);
+        border: 5px solid rgb(1, 74, 23);
+        background-color: rgb(35, 177, 77);
+        box-shadow: 6px 6px 6px black;
         padding: 12px;
         margin: 10px;
 
         > span {
           display: block;
+        }
+
+        span.estado_promocionada,
+        span.estado_cursando,
+        span.estado_pendiente {
+          // background-color: black;
+          display: block;
+          width: fit-content;
+          padding: 5px;
+          border-radius: 15px;
+        }
+
+        span.estado_promocionada {
+          background-color: rgb(0, 251, 96);
+        }
+
+        span.estado_cursando {
+          background-color: rgb(229, 255, 0);
+        }
+
+        span.estado_pendiente {
+          background-color: rgb(89, 90, 89);
         }
 
         .materias__item-detalle {
@@ -47,3 +81,4 @@
     }
   }
 }
+/* Materias */
