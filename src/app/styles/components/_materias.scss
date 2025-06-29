@@ -9,7 +9,7 @@ body {
 
 /* Materias */
 #materias_container {
-  padding: 2%;
+  padding: 2rem;
   background-color: rgb(63, 71, 204);
 
   #materias_lista {
@@ -17,26 +17,30 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    // background-color: rgb(21, 2, 105);
 
     li {
       list-style: none;
 
       div.materias__item {
-        width: 400px;
-        height: 200px;
+        width: 390px;
+        // width: clamp(390px, 2.5vw, 2rem);
+        height: 220px;
         font-size: 20px;
-        // border: 2px solid red;
         border-radius: 12px;
         border: 5px solid rgb(1, 74, 23);
         background-color: rgb(35, 177, 77);
         box-shadow: 6px 6px 6px black;
-        padding: 12px;
+        padding: 20px;
         margin: 10px;
+        position: relative;
 
-        > span {
-          display: block;
+        h4 {
+          margin-top: 10px;
         }
+
+        // > span {
+        //   display: block;
+        // }
 
         span.estado_promocionada,
         span.estado_cursando,
@@ -46,6 +50,9 @@ body {
           width: fit-content;
           padding: 5px;
           border-radius: 15px;
+          display: grid;
+          justify-self: flex-end;
+          border: 2px solid black;
         }
 
         span.estado_promocionada {
@@ -62,20 +69,13 @@ body {
 
         .materias__item-detalle {
           display: flex;
+          width: 100%;
           justify-content: space-between;
           align-items: center;
-          margin-top: 2%;
-          // border: 2px solid red;
-        }
-
-        .materias__item-apuntes.only_child {
-          // background-color: red;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-          text-align: center;
-          align-self: center;
+          // margin-top: 2%;
+          // margin-bottom: auto;
+          position: absolute;
+          bottom: 1%;
         }
       }
     }

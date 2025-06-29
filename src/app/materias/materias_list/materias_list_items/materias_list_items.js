@@ -81,32 +81,22 @@ const Materias_List_Item = ({ ...subjects_p }) => {
                     return (
                         <li key={subject.codigo}>
                             <div className='materias__item' >
-                                <h4>{subject.nombre}</h4>
-                                <p>Código: {subject.codigo}</p>
-                                <span>{subject.año_cuatri}</span>
-                                {/* {console.log("*************", estado)} */}
-                                {/* <span className={tagStatus(subject.estado)} >{subject.estado}</span> */}
                                 <span className={`estado_${(subject.estado).toLowerCase()}`} >{subject.estado}</span>
+                                <h4>{subject.nombre}</h4>
                                 {
-                                    (subject.nota && subject.tiene_apuntes)
+                                    (!(subject.tiene_apuntes)) 
                                         ?
                                         <p className='materias__item-detalle'>
-                                            {/* <span>Nota {subject.nota}</span> */}
-                                            <span>📚 Apuntes</span>
+                                            <span>Código: {subject.codigo}</span>
                                         </p>
-                                        : (subject.nota && !(subject.tiene_apuntes))
+                                        : (subject.tiene_apuntes)
                                             ?
-                                            <p className='materias__item-nota'>
-                                                {/* <span>Nota {subject.nota}</span> */}
+                                            <p className='materias__item-detalle'>
+                                                <span>Código: {subject.codigo}</span>
+                                                <span>📚 Apuntes</span>
                                             </p>
-                                            : (!(subject.nota) && (subject.tiene_apuntes))
-                                                ?
-                                                <p className='materias__item-apuntes only_child'>
-                                                    <span>📚 Apuntes</span>
-                                                </p>
-                                                : null
+                                            : null
                                 }
-
                             </div>
                         </li>
                     )
