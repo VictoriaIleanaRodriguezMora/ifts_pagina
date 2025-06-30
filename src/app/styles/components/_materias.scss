@@ -23,7 +23,6 @@ body {
 
       div.materias__item {
         width: 390px;
-        // width: clamp(390px, 2.5vw, 2rem);
         height: 220px;
         font-size: 20px;
         border-radius: 12px;
@@ -38,14 +37,9 @@ body {
           margin-top: 10px;
         }
 
-        // > span {
-        //   display: block;
-        // }
-
         span.estado_promocionada,
         span.estado_cursando,
         span.estado_pendiente {
-          // background-color: black;
           display: block;
           width: fit-content;
           padding: 5px;
@@ -68,14 +62,12 @@ body {
         }
 
         .materias__item-detalle {
-          display: flex;
           width: 100%;
+          display: inline-flex;
           justify-content: space-between;
           align-items: center;
-          // margin-top: 2%;
-          // margin-bottom: auto;
           position: absolute;
-          bottom: 1%;
+          bottom: 4%;
         }
       }
     }
