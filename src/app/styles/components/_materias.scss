@@ -62,17 +62,23 @@ body {
         }
 
         .materias__item-detalle {
-          // width: 100%;
           display: inline-flex;
           justify-content: space-between;
           align-items: center;
           position: absolute;
-          bottom: 4%;
+          bottom: 15px;
           left: 20px;
           right: 20px;
+          a:link,
+          a:visited,
+          a:hover,
+          a:active {
+            text-decoration: none;
+            color: black;
+          }
         }
       }
     }
   }
 }
-/* Materias */
+/* Materias */

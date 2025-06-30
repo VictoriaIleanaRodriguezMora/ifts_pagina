@@ -1,6 +1,8 @@
 "use client" // info
 import React, { useEffect, useState } from 'react'
 
+const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/";
+
 const Materias_List_Item = ({ ...subjects_p }) => {
     /* for (let i = 0; i < subjects_p.length; i++) {
             console.log("subjects_p", subjects_p[i].codigo);
@@ -84,21 +86,25 @@ const Materias_List_Item = ({ ...subjects_p }) => {
                                 <span className={`estado_${(subject.estado).toLowerCase()}`} >{subject.estado}</span>
                                 <h4>{subject.nombre}</h4>
                                 {
-                                    (!(subject.tiene_apuntes)) 
+                                    (!(subject.tiene_apuntes))
                                         ?
                                         <p className='materias__item-detalle'>
                                             <span>Código: {subject.codigo}</span>
                                         </p>
-                                        : (subject.tiene_apuntes)
+                                        : ((subject.tiene_apuntes) && (subject.link_apuntes))
                                             ?
                                             <p className='materias__item-detalle'>
                                                 <span>Código: {subject.codigo}</span>
-                                                <span>📚 Apuntes</span>
+                                                <span>
+                                                    <a href={`${basePath}${subject.link_apuntes}`} target="#">
+                                                        📚 Apuntes
+                                                    </a>
+                                                </span>
                                             </p>
                                             : null
                                 }
                             </div>
-                        </li>
+                        </li >
                     )
                 })
             }
