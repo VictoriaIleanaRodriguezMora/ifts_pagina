@@ -62,12 +62,14 @@ body {
         }
 
         .materias__item-detalle {
-          width: 100%;
+          // width: 100%;
           display: inline-flex;
           justify-content: space-between;
           align-items: center;
           position: absolute;
           bottom: 4%;
+          left: 20px;
+          right: 20px;
         }
       }
     }
