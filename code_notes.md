@@ -4,4 +4,9 @@ If you add absolute positioning to an element with display: flex, it will be siz
 [ref](https://stackoverflow.com/questions/41033245/does-position-absolute-conflict-with-flexbox)
 [Abrí una pregunta en stackoverflow](https://stackoverflow.com/questions/79684809/flexbox-justify-contentspace-between-doesnt-work-properly-with-positionabsolu/79684870#79684870)
 
-[text-decoration: none;](https://www.w3schools.com/css/css_link.asp )
+[text-decoration: none;](https://www.w3schools.com/css/css_link.asp)
+
+### Filtros en JSX
+https://youtu.be/94CVSF0Gr-w?si=m8wHy1c7KEDO_NXq
+
+https://github.com/urian121/checkbox-filters-with-reactjs/blob/master/src/components/ApiProducts.jsx
