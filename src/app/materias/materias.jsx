@@ -1,7 +1,5 @@
 "use client" // info
-// app/proyectos/page.js
 
-import degree_in_software_development from "/public/subjects/subjects_data.json"
 import Materias_List from "./materias_list/materias_list";
 
 export default function Materias() {

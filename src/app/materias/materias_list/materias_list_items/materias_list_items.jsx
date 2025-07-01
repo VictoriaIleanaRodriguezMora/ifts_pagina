@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 
 const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/";
-
+// { ...subjects_p } ¿
 const Materias_List_Item = ({ ...subjects_p }) => {
 
 
