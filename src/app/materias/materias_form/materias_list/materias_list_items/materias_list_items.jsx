@@ -9,6 +9,7 @@ const Materias_List_Item = ({ ...subjects_p }) => {
     return (
         <>
             {
+                // subjects_p["subjects_p"].filter(x = )
                 subjects_p["subjects_p"].map((subject) => {
                     return (
                         <li key={subject.codigo}>
