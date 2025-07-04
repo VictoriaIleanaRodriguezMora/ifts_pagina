@@ -4,8 +4,9 @@ import degree_in_software_development from "/public/subjects/subjects_data.json"
 const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/";
 
 const Materias_List = () => {
-    const [dataApi, setDataApi] = useState([])
-    const [originalData, setOriginalData] = useState([]);
+    const [dataApi, setDataApi] = useState([]) // Para cambiar la vista
+    const [originalData, setOriginalData] = useState([]); // Para tener la copia original de los datos
+    const [filteredData, setFilteredData] = useState([]); // Para setear a dataApi con los filtros
 
     const [estadoChecked, setEstadoChecked] = useState({
         materia_promocionada: false,
@@ -14,18 +15,15 @@ const Materias_List = () => {
         // materia_tiene_apuntes: false,
     })
 
-    let api_subjects = [];
-
     const fetchData = async () => {
         try {
-            api_subjects = await degree_in_software_development.subjects
-            setDataApi(api_subjects)
+            setDataApi(await degree_in_software_development.subjects)
+            setOriginalData(await degree_in_software_development.subjects)
         }
         catch (e) {
             console.log("Error al consumir API", e);
         }
         finally {
-            console.log("FINALLY api_subjects", api_subjects);
             console.log("FINALLY dataApi", dataApi);
             console.log("Finalizó la carga");
         }
@@ -55,11 +53,25 @@ const Materias_List = () => {
     }, [])
 
     useEffect(() => {
-        let api_subjects_filtered = [...dataApi]; // copia de dataApi
-        const seleccionadas = [];
-        console.log("useEffect estadoChecked, dataApi", estadoChecked);
+        // setDataApi Para cambiar la vista
+        // setOriginalData Para tener la copia original de los datos
+        // setFilteredData Para setear a dataApi con los filtros
 
-    }, [estadoChecked, dataApi]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox
+        console.log("useEffect estadoChecked, dataApi", estadoChecked);
+        console.log("originalData", originalData);
+
+        if (estadoChecked.materia_promocionada) {
+            setDataApi(originalData.filter((a) => a.estado === "Promocionada"))
+        }
+        if (estadoChecked.materia_pendiente) {
+            setDataApi(originalData.filter((a) => a.estado === "Pendiente"))
+        }
+        console.log("originalData", originalData);
+        console.log("dataApi", dataApi);
+        console.log("filteredData", filteredData);
+
+
+    }, [estadoChecked]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox. 
 
     return (
         <>
