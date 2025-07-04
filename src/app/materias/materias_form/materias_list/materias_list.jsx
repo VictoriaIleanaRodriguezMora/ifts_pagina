@@ -5,16 +5,16 @@ const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/
 
 const Materias_List = () => {
     const [dataApi, setDataApi] = useState([])
+    const [originalData, setOriginalData] = useState([]);
 
-    const [estadoChecked, setEstadoChecked] = useState([{
+    const [estadoChecked, setEstadoChecked] = useState({
         materia_promocionada: false,
         materia_pendiente: false,
         materia_cursando: false,
-        materia_tiene_apuntes: false,
-    }])
+        // materia_tiene_apuntes: false,
+    })
 
     let api_subjects = [];
-    let api_subjects_filtered = [];
 
     const fetchData = async () => {
         try {
@@ -32,33 +32,34 @@ const Materias_List = () => {
     }
 
     const handleOnChange = async (e) => {
-        console.log("handleOnChange", e); // e: SyntheticBaseEvent {} > target: input#materia_cursando > checked: true||false 
-        const filter = estadoChecked.filter((elem, i) => {
-            console.log("elem", elem);
-            if (elem[e.target.name] = e.target.checked) {
-                console.log("****IF****");
-
-                console.log("elem", elem);
-                return elem[e.target.name] = e.target.checked
-            }
-
-            // elem = e.target.name
-        })
-        console.log("filter", filter);
-
-        console.log("estadoChecked", estadoChecked);
-        setEstadoChecked({ ...estadoChecked, [e.target.name]: e.target.checked })
-        console.log("estadoChecked", estadoChecked);
-        console.log("e.target.checked", e.target.checked);
-        console.log("e.target.value", e.target.value);
-        console.log("e.target.name", e.target.name);
+        const { name, checked } = e.target;
+        // console.log("handleOnChange", e); // e: SyntheticBaseEvent {} > target: input#materia_cursando > checked: true||false 
+        // estadoChecked.filter((elem, i) => {
+        //     console.log("elem", elem);
+        //     if (elem[name] = checked) {
+        //         console.log("IF **** elem", elem);
+        //         return elem[name] = checked
+        //     }
+        // })
+        console.log("---------estadoChecked", estadoChecked);
+        // setEstadoChecked({ ...estadoChecked, [name]: checked })
+        setEstadoChecked({ ...estadoChecked, [name]: checked })
+        console.log("********* estadoChecked", estadoChecked);
+        // console.log("e.target.checked", e.target.checked);
+        // console.log("e.target.value", e.target.value);
+        // console.log("e.target.name", e.target.name);
     }
 
     useEffect(() => {
         fetchData()
-        console.log("useEffect", api_subjects);
-        console.log("useEffect dataApi", dataApi);
     }, [])
+
+    useEffect(() => {
+        let api_subjects_filtered = [...dataApi]; // copia de dataApi
+        const seleccionadas = [];
+        console.log("useEffect estadoChecked, dataApi", estadoChecked);
+
+    }, [estadoChecked, dataApi]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox
 
     return (
         <>

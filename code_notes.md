@@ -48,3 +48,35 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 filter fetch data to checkboxes react js
 * https://github.com/VictoriaIleanaRodriguezMora/ecommerce-react/blob/main/src/components/asynckmock.js
 
+SPREAD OPERATOR
+
+![alt text](public/img/image-7.png)
+El resultado no varía
+![alt text](public/img/image-1.png)
+REST N OPERATOR
+parametros:
+![alt text](public/img/image-2.png)
+
+Midu:
+Copia por valor
+![alt text](public/img/image-3.png) 
+Copia por referencia
+![alt text](public/img/image-4.png)
+
+Obj
+![alt text](public/img/image-5.png)
+Obj | Cambiar una propiedad
+![alt text](public/img/image-6.png)
+
+https://es.stackoverflow.com/questions/544238/duda-sobre-spread-operator-javascript
+
+* https://youtu.be/0w_43KqOMt8?si=-h9Mz5gYxqHVeZV2
+![alt text](image.png)
+
+* https://youtu.be/qDBVg_NH-_w?si=z12zFqL7ZpHH14O7
+
+
+useState 
+* https://react.dev/reference/react/useState#updating-objects-and-arrays-in-state
+> useState returns an array with exactly two values: The current state. During the first render, it will match the initialState you have passed. The set function that lets you update the state to a different value and trigger a re-render.
+> useState is a Hook, so you can only call it at the top level of your component or your own Hooks. You can’t call it inside loops or conditions. If you need that, extract a new component and move the state into it.
