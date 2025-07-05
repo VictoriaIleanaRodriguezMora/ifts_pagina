@@ -57,19 +57,33 @@ const Materias_List = () => {
         // setOriginalData Para tener la copia original de los datos
         // setFilteredData Para setear a dataApi con los filtros
 
+        const dataFiltradaSeleccionada = []
+        let finalFiltrada = [...originalData]
+
         console.log("useEffect estadoChecked, dataApi", estadoChecked);
         console.log("originalData", originalData);
 
-        if (estadoChecked.materia_promocionada) {
-            setDataApi(originalData.filter((a) => a.estado === "Promocionada"))
-        }
-        if (estadoChecked.materia_pendiente) {
-            setDataApi(originalData.filter((a) => a.estado === "Pendiente"))
-        }
-        console.log("originalData", originalData);
-        console.log("dataApi", dataApi);
-        console.log("filteredData", filteredData);
+        // setFilteredData(originalData.filter((a) => a.estado === "Promocionada"))
+        if (estadoChecked.materia_promocionada) { dataFiltradaSeleccionada.push("Promocionada") }
+        // setFilteredData(originalData.filter((a) => a.estado === "Pendiente"))
+        if (estadoChecked.materia_pendiente) { dataFiltradaSeleccionada.push("Pendiente") }
+        // setFilteredData(originalData.filter((a) => a.estado === "Cursando"))
+        if (estadoChecked.materia_cursando) { dataFiltradaSeleccionada.push("Cursando") }
 
+        if (dataFiltradaSeleccionada.length > 0) {
+            finalFiltrada = finalFiltrada.filter((elem, i) => {
+                console.log("elem.estado", elem.estado);
+                return elem.estado.includes(dataFiltradaSeleccionada)
+            })
+        }
+
+        console.log("dataFiltradaSeleccionada", dataFiltradaSeleccionada);
+        console.log("finalFiltrada", finalFiltrada);
+        console.log("dataApi", dataApi);
+        // console.log("filteredData", filteredData);
+        
+
+        setDataApi(finalFiltrada)
 
     }, [estadoChecked]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox. 
 

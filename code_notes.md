@@ -81,3 +81,6 @@ useState
 > useState returns an array with exactly two values: The current state. During the first render, it will match the initialState you have passed. The set function that lets you update the state to a different value and trigger a re-render.
 > useState is a Hook, so you can only call it at the top level of your component or your own Hooks. You can’t call it inside loops or conditions. If you need that, extract a new component and move the state into it.
 * https://react.dev/reference/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value
+* 
+includes
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
