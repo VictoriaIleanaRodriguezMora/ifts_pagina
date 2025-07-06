@@ -56,35 +56,29 @@ const Materias_List = () => {
         // setDataApi Para cambiar la vista
         // setOriginalData Para tener la copia original de los datos
         // setFilteredData Para setear a dataApi con los filtros
-
         const dataFiltradaSeleccionada = []
         let finalFiltrada = [...originalData]
+        console.log("useEffect estadoChecked: estadoChecked", estadoChecked);
 
-        console.log("useEffect estadoChecked, dataApi", estadoChecked);
-        console.log("originalData", originalData);
-
-        // setFilteredData(originalData.filter((a) => a.estado === "Promocionada"))
         if (estadoChecked.materia_promocionada) { dataFiltradaSeleccionada.push("Promocionada") }
-        // setFilteredData(originalData.filter((a) => a.estado === "Pendiente"))
         if (estadoChecked.materia_pendiente) { dataFiltradaSeleccionada.push("Pendiente") }
-        // setFilteredData(originalData.filter((a) => a.estado === "Cursando"))
         if (estadoChecked.materia_cursando) { dataFiltradaSeleccionada.push("Cursando") }
+        console.log("dataFiltradaSeleccionada", dataFiltradaSeleccionada);
 
         if (dataFiltradaSeleccionada.length > 0) {
-            finalFiltrada = finalFiltrada.filter((elem, i) => {
-                console.log("elem.estado", elem.estado);
-                return elem.estado.includes(dataFiltradaSeleccionada)
+            finalFiltrada = finalFiltrada.filter((e, i) => {
+                // Quiero quedarme solo con las materias donde e.estado esté dentro de los valores que están marcados en los checkboxes (dataFiltradaSeleccionada)
+                if (dataFiltradaSeleccionada.includes(e.estado)) {
+                    console.log("finalFiltrada", finalFiltrada); // acá llega correctamente el nro de {}
+                }
+                return dataFiltradaSeleccionada.includes(e.estado)
             })
         }
 
-        console.log("dataFiltradaSeleccionada", dataFiltradaSeleccionada);
         console.log("finalFiltrada", finalFiltrada);
         console.log("dataApi", dataApi);
-        // console.log("filteredData", filteredData);
-        
 
         setDataApi(finalFiltrada)
-
     }, [estadoChecked]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox. 
 
     return (

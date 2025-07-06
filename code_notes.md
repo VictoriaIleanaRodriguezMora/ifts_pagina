@@ -82,5 +82,20 @@ useState
 > useState is a Hook, so you can only call it at the top level of your component or your own Hooks. You can’t call it inside loops or conditions. If you need that, extract a new component and move the state into it.
 * https://react.dev/reference/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value
 * 
-includes
+includes 
+> determina si un arreglo incluye un valor específico
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+contains
+* https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
+
+
+* https://stackoverflow.com/questions/53606337/check-if-array-contains-all-elements-of-another-array
+* https://stackoverflow.com/questions/24067259/filter-an-array-based-on-another-array
+* https://stackoverflow.com/questions/45197817/filtering-out-an-array-based-on-another-array
+
+
+> https://stackoverflow.com/questions/79691820/cant-filter-an-array-based-on-another-arrays-content
+
+
+💡
+transicion al aplicar filtros
