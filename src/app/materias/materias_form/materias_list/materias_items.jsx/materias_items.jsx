@@ -1,13 +1,10 @@
 const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/";
-const Materias_List_Item = ({ ...subjects_p }) => {
-console.log("Materias_List_Item", subjects_p);
-
+const Materias_List_Item = ({ ...subjectsData }) => {
 
     return (
         <>
             {
-                // subjects_p["subjects_p"].filter(x = )
-                subjects_p["subjects_p"].map((subject) => {
+                subjectsData["subjects_p"].map((subject) => {
                     return (
                         <li key={subject.codigo}>
                             <div className='materias__item' >

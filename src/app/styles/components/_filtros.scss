@@ -1,0 +1,14 @@
+#fitros_container {
+    background-color: red;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 50vw;
+
+    .filtros_inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

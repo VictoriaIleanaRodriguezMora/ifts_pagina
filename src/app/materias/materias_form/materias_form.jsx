@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
 import Materias_List from "./materias_list/materias_list";
 import degree_in_software_development from "/public/subjects/subjects_data.json"
 
@@ -30,21 +30,7 @@ const Materias_Form = () => {
 
   const handleOnChange = async (e) => {
     const { name, checked } = e.target;
-    // console.log("handleOnChange", e); // e: SyntheticBaseEvent {} > target: input#materia_cursando > checked: true||false 
-    // estadoChecked.filter((elem, i) => {
-    //     console.log("elem", elem);
-    //     if (elem[name] = checked) {
-    //         console.log("IF **** elem", elem);
-    //         return elem[name] = checked
-    //     }
-    // })
-    console.log("---------estadoChecked", estadoChecked);
-    // setEstadoChecked({ ...estadoChecked, [name]: checked })
     setEstadoChecked({ ...estadoChecked, [name]: checked })
-    console.log("********* estadoChecked", estadoChecked);
-    // console.log("e.target.checked", e.target.checked);
-    // console.log("e.target.value", e.target.value);
-    // console.log("e.target.name", e.target.name);
   }
 
   useEffect(() => {
@@ -57,12 +43,10 @@ const Materias_Form = () => {
     // setFilteredData Para setear a dataApi con los filtros
     const dataFiltradaSeleccionada = []
     let finalFiltrada = [...originalData]
-    console.log("useEffect estadoChecked: estadoChecked", estadoChecked);
 
     if (estadoChecked.materia_promocionada) { dataFiltradaSeleccionada.push("Promocionada") }
     if (estadoChecked.materia_pendiente) { dataFiltradaSeleccionada.push("Pendiente") }
     if (estadoChecked.materia_cursando) { dataFiltradaSeleccionada.push("Cursando") }
-    console.log("dataFiltradaSeleccionada", dataFiltradaSeleccionada);
 
     if (dataFiltradaSeleccionada.length > 0) {
       finalFiltrada = finalFiltrada.filter((e, i) => {
@@ -81,67 +65,67 @@ const Materias_Form = () => {
       })
     }
 
-    console.log("finalFiltrada", finalFiltrada);
-    console.log("dataApi", dataApi);
-
     setDataApi(finalFiltrada)
   }, [estadoChecked]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox. 
   return (
 
     <>
-      <div id='fitros_container' >
+      <div id="fitros_container">
         <p>Filtrar por: </p>
-        <input
-          type="checkbox"
-          id="materia_promocionada"
-          name="materia_promocionada"
-          value="Promocionada"
-          onChange={handleOnChange}
-        />
-        <label
-          htmlFor="materia_promocionada">
-          Promocionada
-        </label>
+        <div className="filtros_inputs">
+          <label
+            htmlFor="materia_promocionada">
+            <input
+              type="checkbox"
+              id="materia_promocionada"
+              name="materia_promocionada"
+              value="Promocionada"
+              onChange={handleOnChange}
+            />
 
-        <input
-          type="checkbox"
-          id="materia_pendiente"
-          name="materia_pendiente"
-          value="Pendiente"
-          onChange={handleOnChange}
-        />
-        <label
-          htmlFor="materia_pendiente">
-          Pendiente
-        </label>
+            Promocionada
+          </label>
 
-        <input
-          type="checkbox"
-          id="materia_cursando"
-          name="materia_cursando"
-          value="Cursando"
-          onChange={handleOnChange}
-        />
-        <label
-          htmlFor="materia_cursando">
-          Cursando
-        </label>
+          <label
+            htmlFor="materia_pendiente">
+            <input
+              type="checkbox"
+              id="materia_pendiente"
+              name="materia_pendiente"
+              value="Pendiente"
+              onChange={handleOnChange}
+            />
+            Pendiente
+          </label>
 
-        <input
-          type="checkbox"
-          id="materia_tiene_apuntes"
-          name="materia_tiene_apuntes"
-          value="tiene_apuntes"
-          onChange={handleOnChange}
-        />
-        <label
-          htmlFor="materia_tiene_apuntes">
-          Tiene apuntes
-        </label>
+          <label
+            htmlFor="materia_cursando">
+            <input
+              type="checkbox"
+              id="materia_cursando"
+              name="materia_cursando"
+              value="Cursando"
+              onChange={handleOnChange}
+            />
+            Cursando
+          </label>
+
+          <label
+            htmlFor="materia_tiene_apuntes">
+            <input
+              type="checkbox"
+              id="materia_tiene_apuntes"
+              name="materia_tiene_apuntes"
+              value="tiene_apuntes"
+              onChange={handleOnChange}
+            />
+            Tiene apuntes
+          </label>
+        </div>
       </div>
 
       <Materias_List subjects_p={dataApi} />
-      
+
     </>
   )
 }
