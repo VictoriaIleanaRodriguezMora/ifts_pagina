@@ -69,9 +69,16 @@ const Materias_List = () => {
             finalFiltrada = finalFiltrada.filter((e, i) => {
                 // Quiero quedarme solo con las materias donde e.estado esté dentro de los valores que están marcados en los checkboxes (dataFiltradaSeleccionada)
                 if (dataFiltradaSeleccionada.includes(e.estado)) {
-                    console.log("finalFiltrada", finalFiltrada); // acá llega correctamente el nro de {}
+                    // console.log("finalFiltrada", finalFiltrada); // acá llega correctamente el nro de {}
                 }
                 return dataFiltradaSeleccionada.includes(e.estado)
+            })
+        }
+
+        if (estadoChecked.materia_tiene_apuntes) {
+            finalFiltrada = finalFiltrada.filter((e) => {
+                // console.log("materia_tiene_apuntes finalFiltrada", finalFiltrada);
+                return e.tiene_apuntes  // si tiene apuntes === true, se retorna
             })
         }
 
