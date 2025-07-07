@@ -1,119 +1,234 @@
-[
-  {
-    "tecnicas_de_programacion": {
-      "nombre": "Técnicas de Programación",
+{
+  "subjects": [
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.1",
-      "año_cuatri": "1° 1°"
+      "nombre": "Técnicas de Programación",
+      "estado": "Promocionada",
+      "año_cursada": "2024 2°C",
+      "nota": 8,
+      "tiene_apuntes": true,
+      "link_apuntes": "111_tecnicas_de_programacion"
     },
-    "elementos_de_analisis_matematico": {
-      "nombre": "Elementos de Análisis Matemático",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.2",
-      "año_cuatri": "1° 1°"
+      "nombre": "Elementos de Análisis Matemático",
+      "estado": "Promocionada",
+      "año_cursada": "2024 2°C",
+      "nota": 7,
+      "tiene_apuntes": true,
+      "link_apuntes": "113_analisis_matematico"
     },
-    "administracion_gestion_de_bases_de_datos": {
-      "nombre": "Administración y Gestión de Bases de Datos",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.3",
-      "año_cuatri": "1° 1°"
+      "nombre": "Administración y Gestión de Bases de Datos",
+      "estado": "Cursando",
+      "año_cursada": "2025 1°C",
+      "nota": null,
+      "tiene_apuntes": true,
+      "link_apuntes": "112_administracion_de_bases_de_datos"
     },
-    "logica_computacional": {
-      "nombre": "Lógica Computacional",
+    {
+      "año_cuatri": "1° 1°",
       "codigo": "1.1.4",
-      "año_cuatri": "1° 1°"
+      "nombre": "Lógica Computacional",
+      "estado": "Promocionada",
+      "año_cursada": "2024 2°C",
+      "nota": 9,
+      "tiene_apuntes": true,
+      "link_apuntes": "114_logica_computacional"
     },
-    "desarrollo_de_sistemas_orientado_a_objetos": {
-      "nombre": "Desarrollo de Sistemas Orientado a Objetos",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.1",
-      "año_cuatri": "1° 2°"
+      "nombre": "Desarrollo de Sistemas Orientado a Objetos",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "modelado_diseño_de_software": {
-      "nombre": "Modelado y Diseño de Software",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.2",
-      "año_cuatri": "1° 2°"
+      "nombre": "Modelado y Diseño de Software",
+      "estado": "Cursando",
+      "año_cursada": "2025 1°C",
+      "nota": null,
+      "tiene_apuntes": true,
+      "link_apuntes": "122_modelado_diseño_de_software"
     },
-    "estadistica_y_probabilidad": {
-      "nombre": "Estadística y Probabilidades para el Desarrollo de Software",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.3",
-      "año_cuatri": "1° 2°"
+      "nombre": "Estadística y Probabilidades para el Desarrollo de Software",
+      "estado": "Cursando",
+      "año_cursada": "2025 1°C",
+      "nota": null,
+      "tiene_apuntes": true,
+      "link_apuntes": "123_estadistica_probabilidad"
     },
-    "ingles": {
-      "nombre": "Inglés",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.4",
-      "año_cuatri": "1° 2°"
+      "nombre": "Inglés",
+      "estado": "Cursando",
+      "año_cursada": "2025 1°C",
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "aproximacion_al_campo_laboral": {
-      "nombre": "Aproximación al mundo laboral",
+    {
+      "año_cuatri": "1° 2°",
       "codigo": "1.2.5",
-      "año_cuatri": "1° 2°"
+      "nombre": "Aproximación al mundo laboral",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "desarrollo_de_aplicaciones_moviles": {
-      "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.1",
-      "año_cuatri": "2° 1°"
+      "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "metodologia_de_pruebas_de_sistemas": {
-      "nombre": "Metodología de Pruebas de Sistemas",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.2",
-      "año_cuatri": "2° 1°"
+      "nombre": "Metodología de Pruebas de Sistemas",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "tecnologias_de_la_informacion_y_la_comunicacion": {
-      "nombre": "Tecnologías de la Información y de la Comunicación",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.3",
-      "año_cuatri": "2° 1°"
+      "nombre": "Tecnologías de la Información y de la Comunicación",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "taller_de_comunicacion": {
-      "nombre": "Taller de Comunicación",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.4",
-      "año_cuatri": "2° 1°"
+      "nombre": "Taller de Comunicación",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "desarrollo_de_sistemas_de_info_orientados_a_gestion_apoyo_de_decisiones": {
-      "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones",
+    {
+      "año_cuatri": "2° 1°",
       "codigo": "2.1.5",
-      "año_cuatri": "2° 1°"
+      "nombre": "Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "desarrollo_de_sistemas_web_backend": {
-      "nombre": "Desarrollo de Sistemas Web (Back End)",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.1",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo de Sistemas Web (Back End)",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "desarrollo_de_sistemas_web_frontend": {
-      "nombre": "Desarrollo de Sistemas Web (Front End)",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.2",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo de Sistemas Web (Front End)",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "ingenieria_de_software": {
-      "nombre": "Ingeniería de Software",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.3",
-      "año_cuatri": "2° 2°"
+      "nombre": "Ingeniería de Software",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "desarrollo_implementacion_de_sistemas_en_la_nube": {
-      "nombre": "Desarrollo e implementación de sistemas en la nube",
+    {
+      "año_cuatri": "2° 2°",
       "codigo": "2.2.4",
-      "año_cuatri": "2° 2°"
+      "nombre": "Desarrollo e implementación de sistemas en la nube",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "programacion_sobre_redes": {
+    {
+      "año_cuatri": "3° 1°",
+      "codigo": "3.1.1",
       "nombre": "Programación sobre Redes",
-      "codigo": "3.1.1",
-      "año_cuatri": "3° 1°"
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "seminario_de_profundizacion_actualizacion": {
+    {
+      "año_cuatri": "3° 1°",
+      "codigo": "3.1.2",
       "nombre": "Seminario de Profundización y/o Actualización",
-      "codigo": "3.1.1",
-      "año_cuatri": "3° 1°"
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "gestion_de_proyectos": {
-      "nombre": "Gestión de Proyectos",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.3",
-      "año_cuatri": "3° 1°"
+      "nombre": "Gestión de Proyectos",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "trabajo_tecnologia_sociedad": {
-      "nombre": "Trabajo, Tecnología y Sociedad",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.4",
-      "año_cuatri": "3° 1°"
+      "nombre": "Trabajo, Tecnología y Sociedad",
+      "estado": "Cursando",
+      "año_cursada": "2025 1°C",
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     },
-    "proyecto_integrador": {
-      "nombre": "Proyecto Integrador",
+    {
+      "año_cuatri": "3° 1°",
       "codigo": "3.1.5",
-      "año_cuatri": "3° 1°"
+      "nombre": "Proyecto Integrador",
+      "estado": "Pendiente",
+      "año_cursada": null,
+      "nota": null,
+      "tiene_apuntes": false,
+      "link_apuntes": ""
     }
-  }
-]
+  ]
+}
