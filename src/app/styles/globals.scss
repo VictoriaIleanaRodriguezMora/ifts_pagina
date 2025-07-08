@@ -8,9 +8,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#materias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* Estilos raiz*/
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgb(63, 71, 204), #1d206b);
 }
+/* Estilos raiz*/

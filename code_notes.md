@@ -96,6 +96,29 @@ contains
 
 > https://stackoverflow.com/questions/79691820/cant-filter-an-array-based-on-another-arrays-content
 
+Estilos a checkbox
+* https://desarrolloweb.com/articulos/estilos-css-campos-checkbox
+* https://josetxu.com/aplicar-estilos-css-a-campos-radio-y-checkbox/
+* https://codepen.io/josetxu/pen/gzdXVb
+* https://es.stackoverflow.com/questions/600366/
+* como-cambiar-el-color-y-forma-de-un-input-checkbox-en-html-cuando-sea-clickeado
+* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+* https://es.stackoverflow.com/questions/210529/como-hacer-para-que-container -ocupe-100-del-height-de-la-pantalla
 
-💡
+![alt text](public/img/image-9.png)
+![alt text](public/img/image-10.png)
+![alt text](public/img/image-11.png)
+![alt text](public/img/image-12.png)
+![alt text](public/img/image-13.png)
+![alt text](public/img/image-14.png)
+![alt text](public/img/image-15.png)
+![alt text](public/img/image-16.png)
+
+💜💡
 transicion al aplicar filtros
+mixin para flexbox
+footer y header
+rgb  conversor a # 
+organizar code_notes
+filtro por años
++400 de zoom
