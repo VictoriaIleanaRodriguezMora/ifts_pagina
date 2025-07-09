@@ -14,9 +14,6 @@ const Header = () => {
                     <Link href="https://www.ifts18.edu.ar/home" target='#blank' >
                         <Image src="/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
                     </Link>
-                    <Link href="/" className={pathname === '/' ? 'active' : ''}>
-                        Home
-                    </Link>
                     <Link
                         href="/contacto"
                         className={pathname === '/contacto' ? 'active' : ''}
