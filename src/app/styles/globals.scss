@@ -1,5 +1,6 @@
 @import "./components/materias";
 @import "./components/header";
+@import "./components/footer";
 
 /* Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -19,9 +20,11 @@ a {
   color: black;
 }
 
-/* Estilos raiz*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background: linear-gradient(rgb(63, 71, 204), #1d206b);
 }
-/* Estilos raiz*/

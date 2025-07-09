@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './styles/globals.scss'; // Import global Sass styles
 import Header from "./header/header"
+import Footer from "./footer/footer"
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* Contenido de las páginas */}
         {children}
+        <Footer />
       </body>
     </html>
   );

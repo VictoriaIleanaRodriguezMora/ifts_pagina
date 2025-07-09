@@ -15,7 +15,7 @@ const Header = () => {
                         <Image src="/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
                     </Link>
                     <Link
-                        href="/contacto"
+                        href="#footer"
                         className={pathname === '/contacto' ? 'active' : ''}
                         style={{ margin: '0 20px' }}
                     >

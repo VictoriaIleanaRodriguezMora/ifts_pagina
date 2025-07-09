@@ -17,6 +17,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 10px black;
+    border: 5px solid black;
+    border-image: linear-gradient(#4d9f0c, #e66465) 30;
 
     h2,
     h5,
@@ -56,14 +58,14 @@
     padding: 20px;
     margin: 25px 0 15px 0;
     border-radius: 2px;
-    box-shadow: 0px 0px 15px rgb(1, 82, 1);
+    // box-shadow: 0px 0px 15px rgb(1, 82, 1);
 
     .filtros__inputs {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      font-size: 23px;
+      font-size: 20px;
 
       label {
         display: flex;
@@ -74,8 +76,8 @@
       }
       input[type="checkbox"] {
         appearance: none;
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
         background-color: rgb(218, 214, 214);
         cursor: pointer;
         margin-right: 4px;
@@ -106,12 +108,13 @@
         height: 220px;
         font-size: 20px;
         border-radius: 12px;
-        border: 10px solid #08605f;
+        border: 8px solid #08605f;
         background-color: #5ab1bb;
-        box-shadow: 6px 6px 6px black;
+        box-shadow: 0px 0px 10px black;
         padding: 20px;
         margin: 10px;
         position: relative;
+        
         h4 {
           margin-top: 10px;
         }

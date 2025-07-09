@@ -114,6 +114,8 @@ Estilos a checkbox
 ![alt text](public/img/image-15.png)
 ![alt text](public/img/image-16.png)
 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
+* https://docs.fontawesome.com/web/use-with/react/add-icons
 💜💡
 transicion al aplicar filtros
 mixin para flexbox
@@ -124,3 +126,4 @@ filtro por años
 +400 de zoom
 al hacer click en los filtros, que cambie el color de fondo de #filtros_input
 separar logica de ui
+font spartan
