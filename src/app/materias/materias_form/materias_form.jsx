@@ -70,9 +70,9 @@ const Materias_Form = () => {
   return (
 
     <>
-      <div id="fitros_container">
+      <div id="materias__filtros">
         <h3>Filtrar por: </h3>
-        <div className="filtros_inputs">
+        <div className="filtros__inputs">
           <label
             htmlFor="materia_promocionada">
             <input

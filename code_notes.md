@@ -123,3 +123,4 @@ organizar code_notes
 filtro por años
 +400 de zoom
 al hacer click en los filtros, que cambie el color de fondo de #filtros_input
+separar logica de ui
