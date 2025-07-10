@@ -10,10 +10,10 @@ const Footer = () => {
 
             <nav>
                 <ul>
-                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                    <li><FontAwesomeIcon icon={faWhatsapp} /></li>
-                    <li><FontAwesomeIcon icon={faDiscord} /></li>
-                    <li><FontAwesomeIcon icon={faEnvelope} /></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} className='fa-linkedin' /></li>
+                    <li><FontAwesomeIcon icon={faWhatsapp} className='fa-whatsapp' /></li>
+                    <li><FontAwesomeIcon icon={faDiscord} className='fa-discord' /></li>
+                    <li><FontAwesomeIcon icon={faEnvelope} className='fa-envelope' /></li>
                 </ul>
             </nav>
         </footer>

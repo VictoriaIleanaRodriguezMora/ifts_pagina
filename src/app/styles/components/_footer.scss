@@ -23,9 +23,22 @@ footer {
             list-style: none;
             li {
                 font-size: 30px;
+                .fa-linkedin {
+                    color: #0015ff;
+                }
+                .fa-whatsapp {
+                    color: #25d366;
+                }
+                .fa-envelope {
+                    color: red;
+                }
+                .fa-discord {
+                    color: #5865f2;
+                }
             }
         }
     }
+
     @keyframes moveIcons {
         0% {
             transform: rotateZ(0deg);
