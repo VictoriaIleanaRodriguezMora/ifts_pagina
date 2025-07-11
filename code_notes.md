@@ -13,7 +13,7 @@ https://github.com/urian121/checkbox-filters-with-reactjs/blob/master/src/compon
 https://www.dhiwise.com/post/mastering-the-art-of-separating-ui-and-logic-in-react 
 https://codesandbox.io/p/sandbox/react-separation-of-concern-3vxv1?file=%2Fsrc%2Fhelper.js%3A6%2C1
 https://stackoverflow.com/questions/69332889/reactjs-separation-of-ui-and-business-logic
-![alt text](public/img/image.png)
+![alt text](public/dev_img/image.png)
 
 Preguntas internas que he tenido que resolver/refrescar para continuar con el proyecto, dado que estoy adaptandome a NEXT.js sobre la marcha, siempre he usado create-react-app.
 
@@ -50,23 +50,23 @@ filter fetch data to checkboxes react js
 
 SPREAD OPERATOR
 
-![alt text](public/img/image-7.png)
+![alt text](public/dev_img/image-7.png)
 El resultado no varía
-![alt text](public/img/image-1.png)
+![alt text](public/dev_img/image-1.png)
 REST N OPERATOR
 parametros:
-![alt text](public/img/image-2.png)
+![alt text](public/dev_img/image-2.png)
 
 Midu:
 Copia por valor
-![alt text](public/img/image-3.png) 
+![alt text](public/dev_img/image-3.png) 
 Copia por referencia
-![alt text](public/img/image-4.png)
+![alt text](public/dev_img/image-4.png)
 
 Obj
-![alt text](public/img/image-5.png)
+![alt text](public/dev_img/image-5.png)
 Obj | Cambiar una propiedad
-![alt text](public/img/image-6.png)
+![alt text](public/dev_img/image-6.png)
 
 https://es.stackoverflow.com/questions/544238/duda-sobre-spread-operator-javascript
 
@@ -105,18 +105,27 @@ Estilos a checkbox
 * https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
 * https://es.stackoverflow.com/questions/210529/como-hacer-para-que-container -ocupe-100-del-height-de-la-pantalla
 
-![alt text](public/img/image-9.png)
-![alt text](public/img/image-10.png)
-![alt text](public/img/image-11.png)
-![alt text](public/img/image-12.png)
-![alt text](public/img/image-13.png)
-![alt text](public/img/image-14.png)
-![alt text](public/img/image-15.png)
-![alt text](public/img/image-16.png)
+![alt text](public/dev_img/image-9.png)
+![alt text](public/dev_img/image-10.png)
+![alt text](public/dev_img/image-11.png)
+![alt text](public/dev_img/image-12.png)
+![alt text](public/dev_img/image-13.png)
+![alt text](public/dev_img/image-14.png)
+![alt text](public/dev_img/image-15.png)
+![alt text](public/dev_img/image-16.png)
 
 * https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
 * https://docs.fontawesome.com/web/use-with/react/add-icons
 * https://www.wikihow.com/Share-Discord-Profile-Link
+
+* https://dribbble.com/
+![alt text](public/dev_img/image-17.png)
+![alt text](public/dev_img/image-18.png)
+![alt text](public/dev_img/image-19.png)
+![alt text](public/dev_img/image-20.png)
+
+
+* [****](https://www.w3schools.com/css/css3_transitions.asp)
 
 
 💜💡
