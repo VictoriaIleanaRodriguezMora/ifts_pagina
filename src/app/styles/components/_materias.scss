@@ -7,8 +7,8 @@
   width: 100%;
 
   #materias__content {
-    // background-color: rgb(172, 172, 172);
-    background: radial-gradient(ellipse at top, #e66465, #9700fb);
+    background-color: #541b5f;
+    // background: radial-gradient(ellipse at top, #e66465a1,  #2e004d);
     width: 50%;
     font-family: "Nunito Sans", sans-serif;
     padding: 15px 30px;
@@ -27,7 +27,7 @@
     strong,
     i {
       font-family: "Nunito Sans", sans-serif;
-      color: #101e37;
+      color: white;
     }
 
     h2 {
@@ -111,7 +111,8 @@
         font-size: 20px;
         border-radius: 12px;
         border: 8px solid #08605f;
-        background-color: #5ab1bb;
+        background-color: #1d494e;
+        color: #ebebeb;
         box-shadow: 0px 0px 10px black;
         padding: 20px;
         // margin: 20px;
@@ -130,22 +131,26 @@
           border-radius: 15px;
           display: grid;
           justify-self: flex-end;
+          color: black;
           // border: 3px solid black;
+        }
+
+        span.estado_pendiente {
+          // background-color: rgb(157, 157, 157);
+          background-color: #DBDBDB;
+          border: 3px solid rgb(97, 95, 95);
         }
 
         span.estado_promocionada {
           background-color: rgb(4, 247, 97);
+          // background-color: #13FB6C;
           border: 3px solid rgb(37, 120, 95);
         }
 
         span.estado_cursando {
-          background-color: rgb(229, 255, 0);
-          border: 3px solid rgb(123, 131, 95);
-        }
-
-        span.estado_pendiente {
-          background-color: rgb(157, 157, 157);
-          border: 3px solid rgb(97, 95, 95);
+          // background-color: rgb(229, 255, 0);
+          background-color: #E5FF00;
+          border: 3px solid rgb(130 160 24);
         }
 
         .materias__item-detalle {
@@ -161,7 +166,7 @@
           a:hover,
           a:active {
             text-decoration: none;
-            color: black;
+            color: #ebebeb;
           }
         }
       }

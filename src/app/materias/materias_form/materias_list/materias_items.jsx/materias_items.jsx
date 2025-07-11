@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+
 const basePath = "https://github.com/VictoriaIleanaRodriguezMora/ifts/tree/main/";
 const Materias_List_Item = ({ ...subjectsData }) => {
 
@@ -22,7 +25,7 @@ const Materias_List_Item = ({ ...subjectsData }) => {
                                                 <span>Código: {subject.codigo}</span>
                                                 <span>
                                                     <a href={`${basePath}${subject.link_apuntes}`} target="#">
-                                                        📚 Apuntes
+                                                        <FontAwesomeIcon icon={faBook} /> Apuntes
                                                     </a>
                                                 </span>
                                             </p>

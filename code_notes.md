@@ -140,3 +140,4 @@ al hacer click en los filtros, que cambie el color de fondo de #filtros_input
 separar logica de ui
 font spartan
 buscar patrones de flexbox y crear mixins
+organizar alfabeticamente las props
