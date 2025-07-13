@@ -17,8 +17,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 10px black;
-    border: 5px solid black;
-    border-image: linear-gradient(#4d9f0c, #e66465) 30;
+    border: 5px solid #D08AFF;
+    // border-image: linear-gradient(#4d9f0c, #e66465) 30;
 
     h2,
     h5,
@@ -74,6 +74,7 @@
         justify-content: start;
         appearance: none;
       }
+      
       input[type="checkbox"] {
         appearance: none;
         width: 22px;
@@ -127,8 +128,8 @@
         span.estado_pendiente {
           display: block;
           width: fit-content;
-          padding: 5px;
-          border-radius: 15px;
+          padding: 6px;
+          border-radius: 20px;
           display: grid;
           justify-self: flex-end;
           color: black;
@@ -138,19 +139,19 @@
         span.estado_pendiente {
           // background-color: rgb(157, 157, 157);
           background-color: #DBDBDB;
-          border: 3px solid rgb(97, 95, 95);
+          // border: 3px solid rgb(97, 95, 95);
         }
 
         span.estado_promocionada {
           background-color: rgb(4, 247, 97);
           // background-color: #13FB6C;
-          border: 3px solid rgb(37, 120, 95);
+          // border: 3px solid rgb(37, 120, 95);
         }
 
         span.estado_cursando {
           // background-color: rgb(229, 255, 0);
           background-color: #E5FF00;
-          border: 3px solid rgb(130 160 24);
+          // border: 3px solid rgb(130 160 24);
         }
 
         .materias__item-detalle {
