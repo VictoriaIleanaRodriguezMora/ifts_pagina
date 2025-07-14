@@ -127,6 +127,82 @@ Estilos a checkbox
 
 * [****](https://www.w3schools.com/css/css3_transitions.asp)
 
+# ACCESIBLIDAD
+Contenido | Fondo 541B5F - Borde D08AFF
+* https://webaim.org/resources/contrastchecker/?fcolor=D08AFF&bcolor=541B5F
+
+
+🟢 1. Texto normal (párrafos, ítems, botones, enlaces, etc.)
+Qué opción mirar:
+✔ Normal Text
+
+🔵 2. Texto grande (mayor a 18px regular o 14px bold)
+Qué opción mirar:
+✔ Large Text
+
+🟠 3. Bordes de elementos, íconos sin texto, y componentes UI (inputs, cards, botones sin texto, etc.)
+Qué opción mirar:
+✔ Graphical Objects and UI Components
+
+Ratio requerido (AA y AAA): 3:1
+
+Importante: este caso incluye:
+
+Bordes de campos de formulario
+
+Líneas decorativas importantes
+
+Íconos sueltos (por ejemplo, solo el ícono de un lápiz para editar)
+
+🟣 4. Fondo del elemento vs. fondo de la página
+(Cuando un elemento no tiene texto, pero lo ves por el contraste contra el fondo)
+
+Qué opción mirar:
+✔ Graphical Objects and UI Components
+
+Ratio requerido: 3:1
+
+Ejemplo: una tarjeta con fondo azul sobre una página gris. Aunque no tenga texto, debe diferenciarse visualmente.
+
+⚫ 5. Texto dentro de elementos con fondo
+(Comparás texto vs el fondo directo que tiene debajo)
+
+Qué opción mirar:
+✔ Normal Text o Large Text (según el tamaño del texto)
+
+Ratio requerido:
+
+4.5:1 o 3:1 para AA
+
+7:1 o 4.5:1 para AAA
+
+⚪ 6. Borde del texto vs fondo del elemento
+(Cuando usás texto con contorno, stroke o glow)
+
+Qué opción mirar:
+✔ Se considera ilegible por lo general.
+✔ Se sugiere evitar y usar alto contraste de color plano.
+
+Foreground: es el color del texto o del ícono o del borde que estás evaluando.
+Background: es el color de fondo inmediato (del elemento, no de la página entera).
+
+
+![alt text](/public/accesibilidad/image-1.png)
+Pasan tarjetas con el fondo y viceversa
+![alt text](/public/accesibilidad/image-3.png)
+![alt text](/public/accesibilidad/image-4.png)
+![alt text](/public/accesibilidad/image-5.png)
+
+# ESTE
+Azul tarjetas pasa con promocionada/cursando/pendiente. Falta letras blacnas en azul
+VIOLETA con el fondo ok
+![alt text](/public/accesibilidad/image-6.png)
+
+
+
+
+
+
 
 💜💡
 transicion al aplicar filtros
@@ -141,3 +217,4 @@ separar logica de ui
 font spartan
 buscar patrones de flexbox y crear mixins
 organizar alfabeticamente las props
+no usar px

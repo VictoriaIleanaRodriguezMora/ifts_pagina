@@ -7,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 /* Fuentes */
 
-
 * {
   padding: 0;
   margin: 0;
@@ -19,12 +18,13 @@ a {
   text-decoration: none;
   color: black;
 }
-  
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(rgb(63, 71, 204), #1d206b);
+  // background: linear-gradient(rgb(63, 71, 204), #1d206b);
+  background:#1EFF9E ;
 }
