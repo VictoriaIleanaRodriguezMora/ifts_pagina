@@ -198,9 +198,9 @@ Azul tarjetas pasa con promocionada/cursando/pendiente. Falta letras blacnas en 
 VIOLETA con el fondo ok
 ![alt text](/public/accesibilidad/image-6.png)
 
-
-
-
+* https://www.w3schools.com/css/css3_animations.asp
+* https://developer.mozilla.org/es/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
+![alt text](image.png)
 
 
 
