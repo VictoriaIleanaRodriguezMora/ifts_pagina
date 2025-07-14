@@ -183,26 +183,20 @@ Qué opción mirar:
 ✔ Se considera ilegible por lo general.
 ✔ Se sugiere evitar y usar alto contraste de color plano.
 
-🧠 ¿Cómo usar WebAIM bien?
 Foreground: es el color del texto o del ícono o del borde que estás evaluando.
-
 Background: es el color de fondo inmediato (del elemento, no de la página entera).
 
 
-
-![alt text](image-1.png)
-
-
+![alt text](/public/accesibilidad/image-1.png)
 Pasan tarjetas con el fondo y viceversa
-![alt text](image-3.png)
-
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](/public/accesibilidad/image-3.png)
+![alt text](/public/accesibilidad/image-4.png)
+![alt text](/public/accesibilidad/image-5.png)
 
 # ESTE
 Azul tarjetas pasa con promocionada/cursando/pendiente. Falta letras blacnas en azul
 VIOLETA con el fondo ok
-![alt text](image-6.png)
+![alt text](/public/accesibilidad/image-6.png)
 
 
 
