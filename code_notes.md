@@ -202,7 +202,9 @@ VIOLETA con el fondo ok
 * https://developer.mozilla.org/es/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
 ![alt text](image.png)
 
-
+* https://nextjs.org/docs/app/getting-started/metadata-and-og-images
+* https://www.dhiwise.com/post/mastering-nextjs-metadata-for-enhanced-web-visibility
+* https://clerk.com/blog/how-to-customize-nextjs-metadata
 
 💜💡
 transicion al aplicar filtros
