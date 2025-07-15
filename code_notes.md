@@ -220,3 +220,29 @@ font spartan
 buscar patrones de flexbox y crear mixins
 organizar alfabeticamente las props
 no usar px
+
+agregar metadatos
+icono sitio
+* https://youtu.be/2IV08sP9m3U?si=yJzICCuZf1EJuApj
+
+funcion min(fija rem, relativa al contenedor y aplica:%)
+* https://www.w3schools.com/cssref/func_min.php
+
+
+font-size
+funcion clamp(minimo, preferido:vw, maximo) Va a usar el valor preferido mientras no se alcance al mnimo o máximo
+* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+las unidades vw, vh, no son zoomeables, así si:
+clamp(minimo, preferido: calc(vw + rem), maximo)
+
+imagenes responsive
+![alt text](image-1.png)
+* aspect-ratio interesante
+
+
+100vh - propiedad problematica
+para corregir los espacios que se generan en mobile, usar 100dvh
+escribir ambas maneras es buena práctica
+
+menú hamburguesa
+* https://youtu.be/m7YDWNz65iI?si=kGlp_SR266HdFK8-
