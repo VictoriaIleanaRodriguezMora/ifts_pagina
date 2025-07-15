@@ -2,7 +2,6 @@ footer {
   background-color: black;
   color: white;
   max-width: 100vw;
-  // height: calc(100vh - 60vh);
   min-height: 40vh;
   padding: 30px;
   display: flex;
@@ -42,7 +41,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        // font-size: 40px;
 
         a {
           color: white;
@@ -54,6 +52,20 @@ footer {
 
         span {
           font-size: 20px;
+          transition: 0.5s;
+          padding-left: 10px;
+          // name / duration / timing-function / delay / iteration-count / direction
+          &:hover {
+            transform: scale(1.1);
+          }
+          // @keyframes an-footer {
+          //   from {
+          //     background-color: red;
+          //   }
+          //   to {
+          //     background-color: yellow;
+          //   }
+          // }
         }
 
         .footer_icons {
@@ -65,32 +77,29 @@ footer {
           width: 40px;
           height: 40px;
           color: black;
-          transition: transform 1s;
+          transition: 1s;
 
           &:hover {
             transform: rotateZ(360deg);
           }
         }
+
         .fa-linkedin {
-          // color: #0015ff;
           background-color: #0015ff;
           color: white;
           font-size: 48px;
         }
         .fa-whatsapp {
-          // color: #0fb44b;
           background-color: #0fb44b;
           color: white;
           font-size: 48px;
         }
         .fa-envelope {
-          // color: red;
           background-color: red;
           color: white;
           font-size: 43px;
         }
         .fa-discord {
-          // color: #5865f2;
           background-color: #5865f2;
           color: white;
           font-size: 36px;
@@ -99,21 +108,21 @@ footer {
     }
   }
 
-  @keyframes moveIcons {
-    0% {
-      transform: rotateZ(0deg);
-    }
-    25% {
-      transform: rotateZ(15deg);
-    }
-    50% {
-      transform: rotateZ(0deg);
-    }
-    75% {
-      transform: rotateZ(-15deg);
-    }
-    100% {
-      transform: rotateZ(0deg);
-    }
-  }
+  // @keyframes moveIcons {
+  //   0% {
+  //     transform: rotateZ(0deg);
+  //   }
+  //   25% {
+  //     transform: rotateZ(15deg);
+  //   }
+  //   50% {
+  //     transform: rotateZ(0deg);
+  //   }
+  //   75% {
+  //     transform: rotateZ(-15deg);
+  //   }
+  //   100% {
+  //     transform: rotateZ(0deg);
+  //   }
+  // }
 }
