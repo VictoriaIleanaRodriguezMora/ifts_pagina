@@ -31,7 +31,7 @@ Width:
     padding-right: min(1rem, 8%);
 
     // margin-top: 10px;
-    margin-top: (0.625rem);
+    margin-top: 0.625rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,7 @@ Width:
       width: 98%;
       box-shadow: none;
     }
+
     h1 {
       // font-size: 24px;
       // Eclamp(minimo, preferido: calc(vw + rem), maximo)
@@ -103,6 +104,12 @@ Width:
     }
   }
 
+  /*
+    Padding: 
+    Margin:
+    Font-size:
+    Width:
+  */
   #materias__filtros {
     background-color: black;
     color: #ffffff;
@@ -110,16 +117,29 @@ Width:
     align-content: center;
     flex-direction: column;
     width: 30%;
-    padding: 20px;
-    margin: 25px 0;
+    padding: min(1.25rem, 8%);
+    // margin: 25px 0;
+    margin-top: min(1.5rem, 10%);
+    margin-bottom: min(1.5rem, 10%);
     border-radius: 2px;
+
+    @media (max-width: 1200px) {
+      width: 40%;
+    }
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 576px) {
+      width: 60%;
+    }
 
     .filtros__inputs {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      font-size: 20px;
+      // font-size: 20px;
+      font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
 
       label {
         display: flex;
@@ -131,11 +151,11 @@ Width:
 
       input[type="checkbox"] {
         appearance: none;
-        width: 22px;
-        height: 22px;
+        width: min(1rem, 2.5rem);
+        height: min(1rem, 2.5rem);
         background-color: rgb(218, 214, 214);
         cursor: pointer;
-        margin-right: 4px;
+        margin-right: 0.25rem;
         border-radius: 2px;
         border: 1px solid #606060;
       }
