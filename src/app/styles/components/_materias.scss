@@ -6,31 +6,16 @@
   flex-direction: column;
   width: 100%;
 
-  /*
-Padding: 
-Margin:
-Font-size:
-Width:
-*/
-
   #materias__content {
-    /*
-    Padding: ✅
-    Margin: ✅
-    Font-size: ver fuente cuando arregle el width✅
-    Width: ✅ 
-    */
     background-color: #8a13d7;
     width: 60%;
     font-family: "Nunito Sans", sans-serif;
     padding: 15px 30px;
-    // padding: 1rem 1.875rem;
     padding-top: min(1rem, 8%);
     padding-bottom: min(1rem, 8%);
     padding-left: min(1rem, 8%);
     padding-right: min(1rem, 8%);
 
-    // margin-top: 10px;
     margin-top: 0.625rem;
     border-radius: 5px;
     display: flex;
@@ -104,12 +89,6 @@ Width:
     }
   }
 
-  /*
-    Padding: ✅
-    Margin: ✅
-    Font-size: ✅
-    Width: ✅ 
-  */
   #materias__filtros {
     background-color: black;
     color: #ffffff;
@@ -118,7 +97,6 @@ Width:
     flex-direction: column;
     width: 30%;
     padding: min(1.25rem, 8%);
-    // margin: 25px 0;
     margin-top: min(1.5rem, 10%);
     margin-bottom: min(1.5rem, 10%);
     border-radius: 2px;
@@ -138,7 +116,6 @@ Width:
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      // font-size: 20px;
       font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
 
       label {
@@ -185,27 +162,16 @@ Width:
       list-style: none;
 
       div.materias__item {
-        // width: 390px;
-        // width: clamp(12rem, calc(0.5vw + 23rem), 28rem);
-        // height: clamp(4rem, calc(0.5vw + 13rem), 20rem);
-        // font-size: clamp(1rem, calc(0.5vw + 0.8rem), 1.8rem);
-        // padding: min(1.25rem, 8%);
         width: clamp(8rem, calc(5vw + 18rem), 28rem);
         height: clamp(4rem, calc(3vw + 9rem), 20rem);
         font-size: clamp(0.9rem, calc(0.3vw + 0.8rem), 1.8rem);
         padding: min(1.25rem, 5%);
-        // height: 220px;
-        // font-size: 20px;
-
         border-radius: 12px;
         border: 3px solid #000000;
         background: linear-gradient(45deg, #06033e, #1f16c8);
         color: #ebebeb;
         box-shadow: 0px 0px 10px black;
-        // padding: 20px;
         position: relative;
-
-
 
         h4 {
           margin-top: 0.625rem;

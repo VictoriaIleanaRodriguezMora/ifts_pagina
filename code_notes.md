@@ -206,20 +206,6 @@ VIOLETA con el fondo ok
 * https://www.dhiwise.com/post/mastering-nextjs-metadata-for-enhanced-web-visibility
 * https://clerk.com/blog/how-to-customize-nextjs-metadata
 
-💜💡
-transicion al aplicar filtros
-mixin para flexbox
-footer y header
-rgb  conversor a # 
-organizar code_notes
-filtro por años
-+400 de zoom
-al hacer click en los filtros, que cambie el color de fondo de #filtros_input
-separar logica de ui
-font spartan
-buscar patrones de flexbox y crear mixins
-organizar alfabeticamente las props
-no usar px
 
 agregar metadatos
 icono sitio
@@ -268,3 +254,23 @@ pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tama
 
 
 * https://www.browserstack.com/guide/responsive-design-breakpoints
+
+
+
+💜💡
+transicion al aplicar filtros
+mixin para flexbox
+footer y header
+rgb  conversor a # 
+organizar code_notes
+filtro por años
++400 de zoom
+al hacer click en los filtros, que cambie el color de fondo de #filtros_input
+separar logica de ui
+font spartan
+buscar patrones de flexbox y crear mixins
+organizar alfabeticamente las props
+no usar px
+boton para subir y bajar en la pag
+
+hasta 370 ok
