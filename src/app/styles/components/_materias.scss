@@ -6,22 +6,58 @@
   flex-direction: column;
   width: 100%;
 
+  /*
+Padding: 
+Margin:
+Font-size:
+Width:
+*/
+
   #materias__content {
+    /*
+    Padding: ✅
+    Margin: ✅
+    Font-size: ver fuente cuando arregle el width✅
+    Width: ✅ 
+    */
     background-color: #8a13d7;
-    // background: radial-gradient(ellipse at top, #e66465a1,  #2e004d);
-    width: 50%;
+    width: 60%;
     font-family: "Nunito Sans", sans-serif;
     padding: 15px 30px;
-    margin-top: 10px;
+    // padding: 1rem 1.875rem;
+    padding-top: min(1rem, 8%);
+    padding-bottom: min(1rem, 8%);
+    padding-left: min(1rem, 8%);
+    padding-right: min(1rem, 8%);
+
+    // margin-top: 10px;
+    margin-top: (0.625rem);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 10px black;
     border: 5px solid #150227;
-    // border-image: linear-gradient(#4d9f0c, #e66465) 30;
 
+    @media (max-width: 1200px) {
+      width: 80%;
+    }
+    @media (max-width: 768px) {
+      width: 98%;
+      box-shadow: none;
+    }
+    @media (max-width: 576px) {
+      width: 98%;
+      box-shadow: none;
+    }
     h1 {
-      font-size: 24px;
+      // font-size: 24px;
+      // Eclamp(minimo, preferido: calc(vw + rem), maximo)
+      font-size: clamp(1rem, calc(1vw + 1rem), 2.3rem);
+    }
+
+    h2 {
+      margin-bottom: 0.9rem;
+      font-size: clamp(0.8rem, calc(1vw + 0.8rem), 2rem);
     }
 
     h1,
@@ -36,21 +72,14 @@
     p,
     u,
     strong,
-    span i {
+    span,
+    i {
       font-family: "Nunito Sans", sans-serif;
       color: white;
     }
 
-    h2 {
-      margin-bottom: 15px;
-    }
-
-    h5 {
-      font-size: 18px;
-    }
-
     p {
-      font-size: 20px;
+      font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
     }
 
     span {
@@ -58,11 +87,14 @@
       justify-content: start;
       align-items: center;
       color: white;
-      margin-top: 5px;
+      margin-top: 0.313rem;
+      font-size: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
+
       a {
         text-decoration: underline;
         color: white;
-        margin-right: 5px;
+        margin-right: 0.313rem;
+
         .materias__content-icon {
           width: 5px;
           height: 5px;
@@ -73,9 +105,6 @@
 
   #materias__filtros {
     background-color: black;
-    // background: linear-gradient(to right, rgb(19, 121, 49), rgb(0, 245, 172));
-    // background: linear-gradient(to right, rgb(35, 177, 77), rgb(12, 71, 59));
-    // background: linear-gradient(to right, rgb(35, 177, 77), rgb(1, 93, 57));
     color: #ffffff;
     display: flex;
     align-content: center;
@@ -84,7 +113,6 @@
     padding: 20px;
     margin: 25px 0;
     border-radius: 2px;
-    // box-shadow: 0px 0px 15px rgb(1, 82, 1);
 
     .filtros__inputs {
       display: flex;
@@ -114,9 +142,6 @@
 
       input[type="checkbox"]:checked {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%230a6600' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
-
-        // background-color: #0fbf12;
-        // background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
       }
     }
   }
@@ -143,7 +168,6 @@
         color: #ebebeb;
         box-shadow: 0px 0px 10px black;
         padding: 20px;
-        // margin: 20px;
         position: relative;
 
         h4 {
@@ -160,25 +184,18 @@
           display: grid;
           justify-self: flex-end;
           color: black;
-          // border: 3px solid black;
         }
 
         span.estado_pendiente {
-          // background-color: rgb(157, 157, 157);
           background-color: #dbdbdb;
-          // border: 3px solid rgb(97, 95, 95);
         }
 
         span.estado_promocionada {
           background-color: rgb(4, 247, 97);
-          // background-color: #13FB6C;
-          // border: 3px solid rgb(37, 120, 95);
         }
 
         span.estado_cursando {
-          // background-color: rgb(229, 255, 0);
           background-color: #e5ff00;
-          // border: 3px solid rgb(130 160 24);
         }
 
         .materias__item-detalle {

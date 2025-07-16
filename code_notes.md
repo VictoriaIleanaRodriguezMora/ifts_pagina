@@ -246,3 +246,25 @@ escribir ambas maneras es buena práctica
 
 menú hamburguesa
 * https://youtu.be/m7YDWNz65iI?si=kGlp_SR266HdFK8-
+
+
+
+¿Cuando usar cada unidad?
+* https://www.freecodecamp.org/news/css-units-when-to-use-each-one/
+### REM
+Es recomendable remconfigurar el tamaño de fuente, ya que está diseñado para adaptarse a las preferencias del navegador del usuario. Esto facilita la accesibilidad
+Usar rem"or em" para relleno o margen también ofrece ventajas, ya que proporciona un diseño escalable y fácil de mantener.
+### %
+Cuando quieres que un elemento ocupe una cierta cantidad del bloque que lo contiene, entonces debes usar porcentajes.
+Establecer anchos y alturas en porcentajes también permite que los elementos se escalen en relación con el elemento que los contiene.
+### VIEWPORT
+vhTambién se puede usar para configurar tamaños de fuente que se ajusten a la altura de la ventana gráfica. Esto es útil para tipografía adaptable. 
+### PX
+La razón principal por la que pxno siempre se recomienda su uso en diseño adaptable radica en su carácter fijo. A diferencia de las unidades relativas, como los porcentajes em, rem, y las unidades de ventana gráfica ( vw, vh), pxno se ajusta según las preferencias del usuario ni el tamaño de la ventana gráfica.
+
+pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tamaño de un borde o el tamaño de una imagen.
+
+
+
+
+* https://www.browserstack.com/guide/responsive-design-breakpoints

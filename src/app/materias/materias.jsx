@@ -13,7 +13,7 @@ export default function Materias() {
         <h1>Tecnicatura Superior en Desarrollo de Software</h1>
         <h2>¡Hola! Soy Victoria Rodriguez. 👋🏽</h2>
         <p>
-          Empecé a cursa esta carrera en el 2do cuatrimestre del año 2024. <strong>El propósito</strong> de esta página es <i>registrar mi progreso</i> a lo largo de la carrera y compartir mis apuntes.
+          Empecé a cursar esta carrera en el 2do cuatrimestre del año 2024. <strong>El propósito</strong> de esta página es <i>registrar mi progreso</i> a lo largo de la carrera y compartir mis apuntes.
           <br />
           Con el fin de ayudar a alguien que necesite apoyo, brindar otra perspectiva y/o dar un paneo general del contenido. <FontAwesomeIcon icon={faLightbulb} />
         </p>
