@@ -6,24 +6,30 @@ import Header from "./header/header"
 import Footer from "./footer/footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowDown, faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const buttonUpRef = useRef();
   const buttonDownRef = useRef();
 
-  const scrollCalc = (scroll) => {
-    if (!buttonUpRef.current) return;
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
 
+  const calcResize = (widthParam, heightParam) => {
+    setWidth(widthParam);
+    setHeight(heightParam);
+    console.log("width", width);
+    console.log("height", height);
+
+  };
+
+
+  const scrollCalc = (scroll) => {
+    // if (!buttonUpRef.current) return;
     if (scroll > 450) {
-      // buttonUpRef.current.style.visibility = 'visible'
-      // buttonUpRef.current.style.opacity = 1
-      // buttonUpRef.current.classList.remove('button__hide')
       buttonUpRef.current.className = 'button__show'
     } else {
-      // buttonUpRef.current.style.visibility = 'hidden'
-      // buttonUpRef.current.classList.add('button__hide')
       buttonUpRef.current.className = 'button__hide'
     }
 
@@ -35,13 +41,32 @@ export default function RootLayout({ children }) {
   }
 
   useEffect(() => {
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // scrollcalc
     window.addEventListener("scroll", function (e) {
-
-      // console.log("document.documentElement.scrollBottom", e.target.documentElement.scrollBottom);
       scrollCalc(e.target.documentElement.scrollTop);
+      console.log("scroll", e.target.documentElement.scrollHeight); // esto debo hacerlo preguntando por el estado de la data api, cuando cambia data api, debo recalcular el scrollsize
     })
-    // return () => window.removeEventListener("scroll", scrollCalc(e.target.documentElement.scrollTop));
+    return () => window.removeEventListener("scroll", scrollCalc(e.target.documentElement.scrollTop));
+  }, [])
 
+  useEffect(() => {
+    // calcResize
+    console.log("window.innerHeight", window.innerHeight);
+    console.log("window.innerWidth", window.innerWidth);
+
+    window.addEventListener("resize", function (e) {
+      // calcResize()
+
+      // console.log("resize", e);
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+
+    });
+    return () => {
+      window.removeEventListener("resize", calcResize);
+    };
   }, [])
 
   return (
