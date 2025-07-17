@@ -256,6 +256,29 @@ pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tama
 * https://www.browserstack.com/guide/responsive-design-breakpoints
 
 
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages#pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages#layouts
+
+* https://es.stackoverflow.com/questions/21572/como-puedo-detectar-el-movimiento-de-mi-scrollbar
+* https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onscroll2
+
+![alt text](image-2.png)
+* https://dev.to/duxtech/como-rayos-funciona-el-hook-useref-en-react-2lah
+* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
+* https://es.stackoverflow.com/questions/280764/agregar-transici%C3%B3n-a-la-aparici%C3%B3n-de-un-div
+* https://stackoverflow.com/questions/40446658/javascript-add-transition-between-displaynone-and-displayblock
+* https://sass-lang.com/documentation/at-rules/extend/
+* https://developer.mozilla.org/es/docs/Web/API/Element/className
+* https://coreui.io/blog/how-to-dynamically-add-remove-and-toggle-css-classes-in-react-js/#adding-and-removing-a-css-class-dynamically
+
+
+
+
+
+
 
 💜💡
 transicion al aplicar filtros
