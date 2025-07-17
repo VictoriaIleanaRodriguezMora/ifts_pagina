@@ -51,17 +51,26 @@ export default function RootLayout({ children }) {
         {/* Contenido de las páginas */}
         {children}
         <div id="navegacion">
-          <button ref={buttonUpRef} className='button__hide'>
-            <a href="#header">
-              <FontAwesomeIcon icon={faCircleArrowUp} className='navegacion__items' />
-            </a>
-          </button>
-          <button ref={buttonDownRef}>
-            <a href="#footer">
-              <FontAwesomeIcon icon={faCircleArrowDown} className='navegacion__items' />
-            </a>
-          </button>
+          <a
+            href="#header"
+            className=" button__hide"
+            ref={buttonUpRef}
+            role="button"
+            aria-label="Ir arriba"
+          >
+            <FontAwesomeIcon icon={faCircleArrowUp} className='navegacion__items' />
+          </a>
+
+          <a
+            href="#footer"
+            ref={buttonDownRef}
+            role="button"
+            aria-label="Ir abajo"
+          >
+            <FontAwesomeIcon icon={faCircleArrowDown} className='navegacion__items' />
+          </a>
         </div>
+
         <Footer />
       </body>
     </html>
