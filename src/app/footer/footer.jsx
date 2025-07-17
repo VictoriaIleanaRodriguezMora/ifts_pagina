@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <footer id='footer' >
-            <h3>Contacto</h3>
+            <h2>Contacto</h2>
 
             <nav>
                 <ul>

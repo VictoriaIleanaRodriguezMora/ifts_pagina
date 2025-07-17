@@ -206,6 +206,80 @@ VIOLETA con el fondo ok
 * https://www.dhiwise.com/post/mastering-nextjs-metadata-for-enhanced-web-visibility
 * https://clerk.com/blog/how-to-customize-nextjs-metadata
 
+
+agregar metadatos
+icono sitio
+* https://youtu.be/2IV08sP9m3U?si=yJzICCuZf1EJuApj
+
+funcion min(fija rem, relativa al contenedor y aplica:%)
+* https://www.w3schools.com/cssref/func_min.php
+
+
+font-size
+funcion clamp(minimo, preferido:vw, maximo) Va a usar el valor preferido mientras no se alcance al mnimo o máximo
+* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+las unidades vw, vh, no son zoomeables, así si:
+clamp(minimo, preferido: calc(vw + rem), maximo)
+
+imagenes responsive
+![alt text](image-1.png)
+* aspect-ratio interesante
+
+
+100vh - propiedad problematica
+para corregir los espacios que se generan en mobile, usar 100dvh
+escribir ambas maneras es buena práctica
+
+menú hamburguesa
+* https://youtu.be/m7YDWNz65iI?si=kGlp_SR266HdFK8-
+
+
+
+¿Cuando usar cada unidad?
+* https://www.freecodecamp.org/news/css-units-when-to-use-each-one/
+### REM
+Es recomendable remconfigurar el tamaño de fuente, ya que está diseñado para adaptarse a las preferencias del navegador del usuario. Esto facilita la accesibilidad
+Usar rem"or em" para relleno o margen también ofrece ventajas, ya que proporciona un diseño escalable y fácil de mantener.
+### %
+Cuando quieres que un elemento ocupe una cierta cantidad del bloque que lo contiene, entonces debes usar porcentajes.
+Establecer anchos y alturas en porcentajes también permite que los elementos se escalen en relación con el elemento que los contiene.
+### VIEWPORT
+vhTambién se puede usar para configurar tamaños de fuente que se ajusten a la altura de la ventana gráfica. Esto es útil para tipografía adaptable. 
+### PX
+La razón principal por la que pxno siempre se recomienda su uso en diseño adaptable radica en su carácter fijo. A diferencia de las unidades relativas, como los porcentajes em, rem, y las unidades de ventana gráfica ( vw, vh), pxno se ajusta según las preferencias del usuario ni el tamaño de la ventana gráfica.
+
+pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tamaño de un borde o el tamaño de una imagen.
+
+
+
+
+* https://www.browserstack.com/guide/responsive-design-breakpoints
+
+
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages#pages
+* https://nextjs.org/docs/app/getting-started/layouts-and-pages#layouts
+
+* https://es.stackoverflow.com/questions/21572/como-puedo-detectar-el-movimiento-de-mi-scrollbar
+* https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onscroll2
+
+![alt text](image-2.png)
+* https://dev.to/duxtech/como-rayos-funciona-el-hook-useref-en-react-2lah
+* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
+* https://es.stackoverflow.com/questions/280764/agregar-transici%C3%B3n-a-la-aparici%C3%B3n-de-un-div
+* https://stackoverflow.com/questions/40446658/javascript-add-transition-between-displaynone-and-displayblock
+* https://sass-lang.com/documentation/at-rules/extend/
+* https://developer.mozilla.org/es/docs/Web/API/Element/className
+* https://coreui.io/blog/how-to-dynamically-add-remove-and-toggle-css-classes-in-react-js/#adding-and-removing-a-css-class-dynamically
+
+
+
+
+
+
+
 💜💡
 transicion al aplicar filtros
 mixin para flexbox
@@ -220,3 +294,6 @@ font spartan
 buscar patrones de flexbox y crear mixins
 organizar alfabeticamente las props
 no usar px
+boton para subir y bajar en la pag
+
+hasta 370 ok

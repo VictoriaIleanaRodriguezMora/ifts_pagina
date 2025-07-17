@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <>
             {/* Barra de navegación */}
-            <header>
+            <header id='header' >
                 <nav>
                     <ul>
                         <li>

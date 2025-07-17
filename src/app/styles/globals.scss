@@ -1,6 +1,7 @@
 @import "./components/materias";
 @import "./components/header";
 @import "./components/footer";
+@import "./components/navegacion__items";
 
 /* Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -25,16 +26,12 @@ html {
 
 body {
   min-height: 100vh;
-  // background-image: url("../../../public/background/pexels-padrinan-255377.jpg");
-  // background-image: url("../../../public/background/pexels-dom-j-7304-310452.jpg");
-  // background-image: url("../../../public/background/pexels-mccutcheon-1191710.jpg");
   background-image: url("../../../public/background/pexels-themob000-27301625.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;
   object-fit: cover;
-  // background-color: rgba(0, 0, 0, 0.683);
 
   &::before {
     content: "";
