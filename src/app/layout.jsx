@@ -9,64 +9,39 @@ import { faCircleArrowDown, faCircleArrowUp } from '@fortawesome/free-solid-svg-
 import { useEffect, useRef, useState } from 'react';
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
   const buttonUpRef = useRef();
   const buttonDownRef = useRef();
 
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
+const scrollCalc = (scrollTopParam, documentHeightParam) => {
+  const scrollMax = documentHeightParam - window.innerHeight; // !
+  const veintePorciento = scrollMax * 0.20;
+  const ochentaPorciento = scrollMax * 0.80;
 
-  const calcResize = (widthParam, heightParam) => {
-    setWidth(widthParam);
-    setHeight(heightParam);
-    console.log("width", width);
-    console.log("height", height);
+  console.log("scrollTopParam:", scrollTopParam);
+  console.log("scrollMax:", scrollMax);
+  console.log("20%", veintePorciento);
+  console.log("80%", ochentaPorciento);
 
-  };
-
-
-  const scrollCalc = (scroll) => {
-    // if (!buttonUpRef.current) return;
-    if (scroll > 450) {
-      buttonUpRef.current.className = 'button__show'
-    } else {
-      buttonUpRef.current.className = 'button__hide'
-    }
-
-    if (scroll > 1500) {
-      buttonDownRef.current.className = 'button__hide'
-    } else {
-      buttonDownRef.current.className = 'button__show'
-    }
+  if (scrollTopParam > veintePorciento) {
+    console.log("20% SUPERADO");
+    buttonUpRef.current.className = 'button__show';
+  } else {
+    buttonUpRef.current.className = 'button__hide';
   }
+  if (scrollTopParam > ochentaPorciento) {
+    console.log("80% SUPERADO");
+    buttonDownRef.current.className = 'button__hide';
+  } else {
+    buttonDownRef.current.className = 'button__show';
+  }
+};
 
   useEffect(() => {
-    const documentHeight = document.documentElement.scrollHeight;
-
     // scrollcalc
     window.addEventListener("scroll", function (e) {
-      scrollCalc(e.target.documentElement.scrollTop);
-      console.log("scroll", e.target.documentElement.scrollHeight); // esto debo hacerlo preguntando por el estado de la data api, cuando cambia data api, debo recalcular el scrollsize
+      scrollCalc(e.target.documentElement.scrollTop, e.target.documentElement.scrollHeight);
     })
     return () => window.removeEventListener("scroll", scrollCalc(e.target.documentElement.scrollTop));
-  }, [])
-
-  useEffect(() => {
-    // calcResize
-    console.log("window.innerHeight", window.innerHeight);
-    console.log("window.innerWidth", window.innerWidth);
-
-    window.addEventListener("resize", function (e) {
-      // calcResize()
-
-      // console.log("resize", e);
-      setWidth(window.innerWidth);
-      setHeight(window.innerHeight);
-
-    });
-    return () => {
-      window.removeEventListener("resize", calcResize);
-    };
   }, [])
 
   return (
