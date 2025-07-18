@@ -6,42 +6,42 @@ import Header from "./header/header"
 import Footer from "./footer/footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowDown, faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
   const buttonUpRef = useRef();
   const buttonDownRef = useRef();
 
-  const scrollCalc = (scroll) => {
-    if (!buttonUpRef.current) return;
+const scrollCalc = (scrollTopParam, documentHeightParam) => {
+  const scrollMax = documentHeightParam - window.innerHeight; // !
+  const veintePorciento = scrollMax * 0.20;
+  const ochentaPorciento = scrollMax * 0.80;
 
-    if (scroll > 450) {
-      // buttonUpRef.current.style.visibility = 'visible'
-      // buttonUpRef.current.style.opacity = 1
-      // buttonUpRef.current.classList.remove('button__hide')
-      buttonUpRef.current.className = 'button__show'
-    } else {
-      // buttonUpRef.current.style.visibility = 'hidden'
-      // buttonUpRef.current.classList.add('button__hide')
-      buttonUpRef.current.className = 'button__hide'
-    }
+  console.log("scrollTopParam:", scrollTopParam);
+  console.log("scrollMax:", scrollMax);
+  console.log("20%", veintePorciento);
+  console.log("80%", ochentaPorciento);
 
-    if (scroll > 1500) {
-      buttonDownRef.current.className = 'button__hide'
-    } else {
-      buttonDownRef.current.className = 'button__show'
-    }
+  if (scrollTopParam > veintePorciento) {
+    console.log("20% SUPERADO");
+    buttonUpRef.current.className = 'button__show';
+  } else {
+    buttonUpRef.current.className = 'button__hide';
   }
+  if (scrollTopParam > ochentaPorciento) {
+    console.log("80% SUPERADO");
+    buttonDownRef.current.className = 'button__hide';
+  } else {
+    buttonDownRef.current.className = 'button__show';
+  }
+};
 
   useEffect(() => {
+    // scrollcalc
     window.addEventListener("scroll", function (e) {
-
-      // console.log("document.documentElement.scrollBottom", e.target.documentElement.scrollBottom);
-      scrollCalc(e.target.documentElement.scrollTop);
+      scrollCalc(e.target.documentElement.scrollTop, e.target.documentElement.scrollHeight);
     })
-    // return () => window.removeEventListener("scroll", scrollCalc(e.target.documentElement.scrollTop));
-
+    return () => window.removeEventListener("scroll", scrollCalc(e.target.documentElement.scrollTop));
   }, [])
 
   return (

@@ -273,11 +273,11 @@ pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tama
 * https://sass-lang.com/documentation/at-rules/extend/
 * https://developer.mozilla.org/es/docs/Web/API/Element/className
 * https://coreui.io/blog/how-to-dynamically-add-remove-and-toggle-css-classes-in-react-js/#adding-and-removing-a-css-class-dynamically
+* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width
+* https://desarrolloweb.com/articulos/detectar-resolucion-pantalla-usuario-javascript.html
+* https://dev.to/israeldev_/usewidth-useheight-custom-hook-para-obtener-tamano-de-la-pantalla-1fe1
 
-
-
-
-
+* https://stackoverflow.com/questions/55151041/window-is-not-defined-in-next-js-react-app
 
 
 💜💡
@@ -297,3 +297,4 @@ no usar px
 boton para subir y bajar en la pag
 
 hasta 370 ok
+custom hook
