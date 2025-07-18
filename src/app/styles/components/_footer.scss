@@ -6,10 +6,11 @@ footer {
   // padding: 30px;
   padding: min(1.25rem, 8%);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  @include d-flex(column, center, center, 0, 0);
 
   h2,
   h3,
@@ -25,48 +26,56 @@ footer {
 
   nav {
     width: auto;
-    display: flex;
-    justify-content: space-around;
-    row-gap: 15px;
-    column-gap: 15px;
+    // display: flex;
+    // justify-content: space-around;
+    // row-gap: 15px;
+    // column-gap: 15px;
+    @include d-flex(column, center, start, 15px, 15px);
+
     margin: 15px;
 
     ul {
       width: auto;
-      display: flex;
-      justify-content: center;
-      align-items: start;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: start;
+      @include d-flex(column, center, start, 0, 0);
       text-decoration: none;
-      flex-direction: column;
       list-style: none;
 
       @media (max-width: 370px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        @include d-flex(column, center, center, 0, 0);
         li {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          // flex-direction: column;
+          // align-items: center;
+          // justify-content: center;
+          @include d-flex(column, center, center, 0, 0);
         }
         a {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          // flex-direction: column;
+          // align-items: center;
+          // justify-content: center;
+          @include d-flex(column, center, center, 0, 0);
         }
       }
 
       li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include d-flex(row, center, center, 0, 0);
 
         a {
           color: white;
           font-size: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          @include d-flex(row, center, center, 0, 0);
           font-size: clamp(0.8rem, calc(0.5vw + 1rem), 2rem);
         }
 

@@ -279,6 +279,7 @@ pxes útil cuando desea especificar un tamaño fijo de un elemento, como el tama
 
 * https://stackoverflow.com/questions/55151041/window-is-not-defined-in-next-js-react-app
 
+# HEADER RESPONSVE
 
 💜💡
 transicion al aplicar filtros

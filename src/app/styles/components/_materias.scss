@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @include d-flex(column, center, center, 0, 0);
+
   width: 100%;
 
   #materias__content {
@@ -18,8 +20,10 @@
 
     margin-top: 0.625rem;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    @include d-flex(column, center, start, 0, 0);
+
     box-shadow: 10px 10px 10px black;
     border: 5px solid #150227;
 
@@ -69,9 +73,11 @@
     }
 
     span {
-      display: flex;
-      justify-content: start;
-      align-items: center;
+      // display: flex;
+      // justify-content: start;
+      // align-items: center;
+      @include d-flex(row, start, center, 0, 0);
+
       color: white;
       margin-top: 0.313rem;
       font-size: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
@@ -92,9 +98,11 @@
   #materias__filtros {
     background-color: black;
     color: #ffffff;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+    // display: flex;
+    // align-items: start;
+    // flex-direction: column;
+    @include d-flex(column, center, start, 0, 0);
+
     width: 30%;
     padding: min(1.25rem, 8%);
     margin-top: min(1.5rem, 10%);
@@ -112,17 +120,21 @@
     }
 
     .filtros__inputs {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: start;
+      @include d-flex(column, center, start, 0, 0);
+
       font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
 
       label {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: start;
+        @include d-flex(row, start, center, 0, 0);
+
         appearance: none;
       }
 
@@ -151,11 +163,13 @@
   */
   #materias__lista {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    // display: flex;
+    // justify-content: space-evenly;
+    // row-gap: 1.25rem;
+    // column-gap: 1.875rem;
+    @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
     flex-wrap: wrap;
-    row-gap: 1.25rem;
-    column-gap: 1.875rem;
+
     margin: 10px 0 40px 0;
     padding: 2rem;
 
@@ -177,7 +191,6 @@
     @media (max-width: 370px) {
       padding: 0 0.1rem;
     }
-    // 320 para abjo el ancho
 
     li {
       list-style: none;
@@ -202,7 +215,7 @@
         span.estado_cursando,
         span.estado_pendiente {
           display: block;
-          width: fit-content;
+          width: fit-content; // !
           padding: 0.375rem;
           border-radius: 20px;
           display: grid;
@@ -223,9 +236,11 @@
         }
 
         .materias__item-detalle {
-          display: inline-flex;
-          justify-content: space-between;
-          align-items: center;
+          // display: inline-flex;
+          // justify-content: space-between;
+          // align-items: center;
+          @include d-flex(row, space-between, center, 0, 0);
+
           position: absolute;
           bottom: 10px;
           left: 20px;
