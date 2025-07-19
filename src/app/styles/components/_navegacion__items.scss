@@ -1,17 +1,16 @@
 #navegacion {
-
-  @include d-flex(column, center, center, 0, 0);
   position: fixed;
   z-index: 3;
   right: 1rem;
   bottom: 1rem;
+  @include d-flex(column, center, center, 0, 0);
 
   a {
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
-    @include d-flex(row, center, center, 0, 0);
-    padding: 0.1rem;
     margin-bottom: 0.2rem;
+    padding: 0.1rem;
+    @include d-flex(row, center, center, 0, 0);
 
     .navegacion__items {
       height: 2rem;

@@ -6,31 +6,28 @@
 
   #materias__content {
     background-color: #8a13d7;
+    border-radius: 5px;
+    border: 5px solid #150227;
+    box-shadow: 10px 10px 10px black;
     width: 60%;
     font-family: "Nunito Sans", sans-serif;
-    padding: 15px 30px;
     padding-top: min(1rem, 8%);
     padding-bottom: min(1rem, 8%);
     padding-left: min(1rem, 8%);
     padding-right: min(1rem, 8%);
-
     margin-top: 0.625rem;
-    border-radius: 5px;
     @include d-flex(column, center, start, 0, 0);
-
-    box-shadow: 10px 10px 10px black;
-    border: 5px solid #150227;
 
     @media (max-width: 1200px) {
       width: 80%;
     }
     @media (max-width: 768px) {
-      width: 98%;
       box-shadow: none;
+      width: 98%;
     }
     @media (max-width: 576px) {
-      width: 98%;
       box-shadow: none;
+      width: 98%;
     }
 
     h1 {
@@ -38,8 +35,8 @@
     }
 
     h2 {
-      margin-bottom: 0.9rem;
       font-size: clamp(0.8rem, calc(1vw + 0.8rem), 2rem);
+      margin-bottom: 0.9rem;
     }
 
     h1,
@@ -65,20 +62,19 @@
     }
 
     span {
+      color: white;
+      font-size: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
+      margin-top: 0.313rem;
       @include d-flex(row, start, center, 0, 0);
 
-      color: white;
-      margin-top: 0.313rem;
-      font-size: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
-
       a {
-        text-decoration: underline;
         color: white;
         margin-right: 0.313rem;
+        text-decoration: underline;
 
         .materias__content-icon {
-          width: 5px;
           height: 5px;
+          width: 5px;
         }
       }
     }
@@ -86,13 +82,13 @@
 
   #materias__filtros {
     background-color: black;
+    border-radius: 2px;
     color: #ffffff;
-    @include d-flex(column, center, start, 0, 0);
-    width: 30%;
-    padding: min(1.25rem, 8%);
     margin-top: min(1.5rem, 10%);
     margin-bottom: min(1.5rem, 10%);
-    border-radius: 2px;
+    width: 30%;
+    padding: min(1.25rem, 8%);
+    @include d-flex(column, center, start, 0, 0);
 
     @media (max-width: 1200px) {
       width: 40%;
@@ -105,22 +101,22 @@
     }
 
     .filtros__inputs {
-      @include d-flex(column, center, start, 0, 0);
       font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
+      @include d-flex(column, center, start, 0, 0);
       label {
-        @include d-flex(row, start, center, 0, 0);
         appearance: none;
+        @include d-flex(row, start, center, 0, 0);
       }
 
       input[type="checkbox"] {
         appearance: none;
-        width: min(1rem, 2.5rem);
-        height: min(1rem, 2.5rem);
         background-color: rgb(218, 214, 214);
-        cursor: pointer;
-        margin-right: 0.25rem;
         border-radius: 2px;
         border: 1px solid #606060;
+        cursor: pointer;
+        margin-right: 0.25rem;
+        height: min(1rem, 2.5rem);
+        width: min(1rem, 2.5rem);
       }
 
       input[type="checkbox"]:checked {
@@ -131,21 +127,20 @@
 
   #materias__lista {
     width: 100%;
-    @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
     flex-wrap: wrap;
-
     margin: 10px 0 40px 0;
     padding: 2rem;
-
+    @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
+    
     @media (max-width: 1300px) {
-      row-gap: 1.1rem;
       padding: 0 3.5rem;
+      row-gap: 1.1rem;
     }
 
     @media (max-width: 1219px) {
-      row-gap: 1.25rem;
       column-gap: 1rem;
       padding: 0 5rem;
+      row-gap: 1.25rem;
     }
 
     @media (max-width: 768px) {
@@ -160,17 +155,17 @@
       list-style: none;
 
       div.materias__item {
-        width: clamp(8rem, calc(5vw + 18rem), 28rem);
-        height: clamp(4rem, calc(3vw + 9rem), 20rem);
-        font-size: clamp(0.9rem, calc(0.3vw + 0.8rem), 1.8rem);
-        padding: min(1.25rem, 5%);
+        background: linear-gradient(45deg, #06033e, #1f16c8);
+        box-shadow: 0px 0px 10px black;
         border-radius: 12px;
         border: 3px solid #000000;
-        background: linear-gradient(45deg, #06033e, #1f16c8);
         color: #ebebeb;
-        box-shadow: 0px 0px 10px black;
+        font-size: clamp(0.9rem, calc(0.3vw + 0.8rem), 1.8rem);
+        padding: min(1.25rem, 5%);
         position: relative;
-
+        height: clamp(4rem, calc(3vw + 9rem), 20rem);
+        width: clamp(8rem, calc(5vw + 18rem), 28rem);
+        
         h4 {
           margin-top: 0.625rem;
         }
@@ -178,13 +173,12 @@
         span.estado_promocionada,
         span.estado_cursando,
         span.estado_pendiente {
-          display: block;
-          width: fit-content; // !
-          padding: 0.375rem;
           border-radius: 20px;
+          color: black;
           display: grid;
           justify-self: flex-end;
-          color: black;
+          padding: 0.375rem;
+          width: fit-content; // !
         }
 
         span.estado_pendiente {
@@ -200,11 +194,12 @@
         }
 
         .materias__item-detalle {
-          @include d-flex(row, space-between, center, 0, 0);
           position: absolute;
           bottom: 10px;
           left: 20px;
           right: 20px;
+          @include d-flex(row, space-between, center, 0, 0);
+          
           a:link,
           a:visited,
           a:hover,
