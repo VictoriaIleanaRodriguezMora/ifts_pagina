@@ -1,9 +1,5 @@
 /* Materias */
 #materias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   @include d-flex(column, center, center, 0, 0);
 
   width: 100%;
@@ -20,8 +16,6 @@
 
     margin-top: 0.625rem;
     border-radius: 5px;
-    // display: flex;
-    // flex-direction: column;
     @include d-flex(column, center, start, 0, 0);
 
     box-shadow: 10px 10px 10px black;
@@ -40,8 +34,6 @@
     }
 
     h1 {
-      // font-size: 24px;
-      // Eclamp(minimo, preferido: calc(vw + rem), maximo)
       font-size: clamp(1rem, calc(1vw + 1rem), 2.3rem);
     }
 
@@ -73,9 +65,6 @@
     }
 
     span {
-      // display: flex;
-      // justify-content: start;
-      // align-items: center;
       @include d-flex(row, start, center, 0, 0);
 
       color: white;
@@ -98,11 +87,7 @@
   #materias__filtros {
     background-color: black;
     color: #ffffff;
-    // display: flex;
-    // align-items: start;
-    // flex-direction: column;
     @include d-flex(column, center, start, 0, 0);
-
     width: 30%;
     padding: min(1.25rem, 8%);
     margin-top: min(1.5rem, 10%);
@@ -120,21 +105,10 @@
     }
 
     .filtros__inputs {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: start;
       @include d-flex(column, center, start, 0, 0);
-
       font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
-
       label {
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
-        // justify-content: start;
         @include d-flex(row, start, center, 0, 0);
-
         appearance: none;
       }
 
@@ -155,18 +129,8 @@
     }
   }
 
-  /*
-    Padding: 
-    Margin: 
-    Font-size: 
-    Width:  
-  */
   #materias__lista {
     width: 100%;
-    // display: flex;
-    // justify-content: space-evenly;
-    // row-gap: 1.25rem;
-    // column-gap: 1.875rem;
     @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
     flex-wrap: wrap;
 
@@ -236,11 +200,7 @@
         }
 
         .materias__item-detalle {
-          // display: inline-flex;
-          // justify-content: space-between;
-          // align-items: center;
           @include d-flex(row, space-between, center, 0, 0);
-
           position: absolute;
           bottom: 10px;
           left: 20px;

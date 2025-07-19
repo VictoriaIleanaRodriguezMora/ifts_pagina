@@ -5,17 +5,11 @@ header {
 
   nav {
     width: 50%;
-    // display: flex;
-    // justify-content: start;
-    // align-items: center;
     @include d-flex(row, start, center, 0, 0);
 
     ul {
       list-style: none;
       text-decoration: none;
-      // display: flex;
-      // justify-content: start;
-      // align-items: center;
       @include d-flex(row, start, center, 0, 0);
 
       li {
@@ -34,11 +28,7 @@ header {
         a {
           color: white;
           margin: 0 5px;
-          // display: flex;
-          // justify-content: start;
-          // align-items: center;
           @include d-flex(row, start, center, 0, 0);
-
           font-size: 20px;
           font-family: "Nunito Sans", sans-serif;
         }
