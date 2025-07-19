@@ -1,22 +1,17 @@
 #navegacion {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   z-index: 3;
   right: 1rem;
   bottom: 1rem;
-  //   button:nth-child(2) {
-  //     background-color: red;
-  //   }
+  @include d-flex(column, center, center, 0, 0);
+
   a {
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.1rem;
     margin-bottom: 0.2rem;
-    
+    padding: 0.1rem;
+    @include d-flex(row, center, center, 0, 0);
+
     .navegacion__items {
       height: 2rem;
       width: 2rem;
@@ -24,9 +19,6 @@
   }
 }
 
-.display-none {
-  display: none;
-}
 
 .button__show {
   animation: button__show 700ms ease both;
@@ -38,7 +30,7 @@
 
 @keyframes button__show {
   0% {
-    transform: scale(0) rotate(12deg);
+    transform: scale(0) rotate(120deg);
     opacity: 0;
     visibility: hidden;
   }
@@ -56,7 +48,7 @@
     visibility: visible;
   }
   100% {
-    transform: scale(0) rotate(-12deg);
+    transform: scale(0) rotate(120deg);
     opacity: 0;
     visibility: hidden;
   }
