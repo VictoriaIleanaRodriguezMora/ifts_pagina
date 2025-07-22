@@ -165,6 +165,9 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 * https://medium.com/@ankitsingh80741/ultimate-guide-to-routing-with-the-app-router-in-next-js-14-0a19ecb67150
 > In Next.js 14, routes are automatically defined based on the folder structure inside the app/ directory. Each folder represents a new route, and the page.js file within the folder serves as the content for that route.
 
+## useRef
+* https://stackoverflow.com/questions/59198952/using-document-queryselector-in-react-should-i-use-refs-instead-how
+
 # ACCESIBILIDAD 
 1. Texto normal (párrafos, ítems, botones, enlaces, etc.)
    
