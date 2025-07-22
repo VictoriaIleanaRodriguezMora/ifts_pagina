@@ -3,42 +3,8 @@ header {
 
   nav {
     padding: 5px 10px;
-    background-color: #000000eb;
+    background-color: #000000;
     width: 100%;
-    // @include d-flex(row, center, center, 0, 0);
-
-    @media (max-width: 500px) {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100dvh;
-      width: min(15rem, 100%);
-      z-index: 3;
-      border: 1px solid gray;
-
-      ul {
-        width: 100%;
-        @include d-flex(column, center, start, 0, 0);
-        // li:nth-child(2) {
-        //   margin-right: 0;
-        //   margin: 0;
-        //   a {
-        //     margin: 0 0;
-        //   }
-        // }
-        li {
-          padding: 0px;
-          margin: 0px;
-          a {
-            margin: 0px 0px;
-          }
-        }
-      }
-      a {
-        width: 100%;
-        margin: 0;
-      }
-    }
 
     ul {
       list-style: none;
@@ -70,6 +36,34 @@ header {
           margin: 0 5px;
           @include d-flex(row, start, center, 0, 0);
         }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(15rem, 100%);
+      z-index: 3;
+      border: 1px solid gray;
+
+      ul {
+        width: 100%;
+        @include d-flex(column, center, start, 0, 0);
+        // li {
+        //   padding: 0px;
+        //   margin: 0px;
+        //   a {
+        //     margin: 0px 0px;
+        //   }
+        // }
+      }
+      a {
+        width: 100%;
+        margin: 0;
       }
     }
   }

@@ -21,7 +21,6 @@ const Header = () => {
                             <Link
                                 href="#footer"
                                 className={pathname === '/contacto' ? 'active' : ''}
-                                // style={{ margin: '0 20px' }}
                             >
                                 Contacto
                             </Link>
