@@ -131,7 +131,7 @@
     margin: 10px 0 40px 0;
     padding: 2rem;
     @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
-    
+
     @media (max-width: 1300px) {
       padding: 0 3.5rem;
       row-gap: 1.1rem;
@@ -165,7 +165,7 @@
         position: relative;
         height: clamp(4rem, calc(3vw + 9rem), 20rem);
         width: clamp(8rem, calc(5vw + 18rem), 28rem);
-        
+
         h4 {
           margin-top: 0.625rem;
         }
@@ -199,7 +199,7 @@
           left: 20px;
           right: 20px;
           @include d-flex(row, space-between, center, 0, 0);
-          
+
           a:link,
           a:visited,
           a:hover,
@@ -210,6 +210,10 @@
         }
       }
     }
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 2.1rem;
   }
 }
 

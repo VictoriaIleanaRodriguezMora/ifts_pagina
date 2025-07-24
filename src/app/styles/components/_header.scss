@@ -1,5 +1,14 @@
 header {
   width: 100%;
+  position: relative;
+
+  #overlay {
+    background-color: rgba(0, 0, 0, 0.437);
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    display: none;
+  }
 
   nav {
     padding: 5px 10px;
@@ -47,21 +56,63 @@ header {
       right: -100%;
       height: 100dvh;
       width: min(15rem, 100%);
-      z-index: 3;
+      z-index: 5;
       border: 1px solid gray;
       transition: right 300ms ease;
 
       &.show {
         right: 0;
       }
+
+      &.show ~ #overlay {
+        // selector de hermanos
+        display: block;
+      }
+
       ul {
         width: 100%;
         @include d-flex(column, center, start, 0, 0);
       }
+
       a {
         width: 100%;
         margin: 0;
       }
     }
+    #open-sidebar-button,
+    #close-sidebar-button {
+      display: block;
+    }
+  }
+}
+
+#open-sidebar-button {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+#close-sidebar-button {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+
+  cursor: pointer;
+  svg {
+    width: 2rem;
+    height: 2rem;
   }
 }
