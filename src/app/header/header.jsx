@@ -12,17 +12,20 @@ const Header = () => {
     const navbarRef = useRef()
     const openButtonRef = useRef()
 
+    // const navLinks = document.querySelectorAll('nav a')
+    // navLinks.forEach(link => {
+    //     link.addEventListener('click', () => {
+    //         closeSidebar()
+    //     })
+    // })
 
-
-    function openSidebar(e) {
-        // console.log("e", e);
-
+    const openSidebar = () => {
         navbarRef.current.classList = 'show';
         openButtonRef.current.setAttribute('aria-expanded', 'true')
         navbarRef.current.removeAttribute('inert')
     }
 
-    function closeSidebar() {
+    const closeSidebar = () => {
         navbarRef.current.classList = '';
         openButtonRef.current.setAttribute('aria-expanded', 'false')
         navbarRef.current.setAttribute('inert', '')
@@ -34,7 +37,7 @@ const Header = () => {
         function updateNavbar(e) {
             const isMobile = e.matches
             console.log("isMobile", isMobile);
-            
+
             if (isMobile) {
                 navbarRef.current?.setAttribute('inert', '')
             } else {
@@ -44,7 +47,6 @@ const Header = () => {
 
         // Ejecutar al montar por si ya coincide
         updateNavbar(media)
-
         media.addEventListener('change', updateNavbar)
 
         return () => {
@@ -55,7 +57,6 @@ const Header = () => {
 
     return (
         <>
-            {/* Barra de navegación */}
             <header id='header' >
                 <button ref={openButtonRef} id='open-sidebar-button' onClick={openSidebar} aria-label='open sidebar' aria-expanded="false" aria-controls='navbar'>
                     <FontAwesomeIcon icon={faBars} />
@@ -67,7 +68,7 @@ const Header = () => {
                                 <FontAwesomeIcon icon={faClose} />
                             </button>
                         </li>
-                        <li aria-current="Página del terciario" >
+                        <li aria-current="Página del terciario" id='header_logo'>
                             <Link href="https://www.ifts18.edu.ar/home" target='#blank' >
                                 <Image src="/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
                             </Link>
@@ -89,7 +90,6 @@ const Header = () => {
                 </nav>
                 <div id="overlay" onClick={closeSidebar} aria-hidden="true" ></div>
             </header>
-
         </>
     )
 }

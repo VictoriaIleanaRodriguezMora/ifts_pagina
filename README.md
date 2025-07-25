@@ -168,6 +168,10 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 ## useRef
 * https://stackoverflow.com/questions/59198952/using-document-queryselector-in-react-should-i-use-refs-instead-how
 
+* https://stackoverflow.com/questions/54633690/how-can-i-use-multiple-refs-for-an-array-of-elements-with-hooks
+
+* https://adebola-niran.medium.com/how-to-create-multiple-refs-in-react-with-useref-5fa2bbef5d15
+
 # ACCESIBILIDAD 
 1. Texto normal (párrafos, ítems, botones, enlaces, etc.)
    
