@@ -1,4 +1,4 @@
-# Documentación necesaria 
+# Documentación utilizada 
 ### Estos son los links, paginás, vídeos, preguntas de Stack Overflow que necesité para para llevar adelante el proyecto.
 ### Lejos de recordar todo de memoria, durante el desarrollo indagué, busqué la información que me hizo falta. Es una habilidad fundamental. 
 
@@ -8,14 +8,12 @@
 
 "If you add absolute positioning to an element with display: flex, it will be sized using the shrink-to-fit algorithm (typical of inline-level containers) instead of the fill-available one."
 * https://stackoverflow.com/questions/41033245/does-position-absolute-conflict-with-flexbox
-* 
-[Flexbox justify-content:space-between doesn't work properly with position:absolute](https://stackoverflow.com/questions/41033245/does-position-absolute-conflict-with-flexbox)
-
+  
 > Abrí una pregunta en stackoverflow
 > 
 > [Flexbox justify-content:space-between doesn't work properly with position:absolute](https://stackoverflow.com/questions/79684809/flexbox-justify-contentspace-between-doesnt-work-properly-with-positionabsolu/79684870#79684870)
 
-[w3schools | CSS Links | text-decoration: none;](https://www.w3schools.com/css/css_link.asp)
+* [w3schools | CSS Links | text-decoration: none;](https://www.w3schools.com/css/css_link.asp)
 
 
 <!-- ![alt text](image.png) -->
@@ -26,7 +24,6 @@ Estilos a checkbox
 * https://josetxu.com/aplicar-estilos-css-a-campos-radio-y-checkbox/
 * https://codepen.io/josetxu/pen/gzdXVb
 * https://es.stackoverflow.com/questions/600366/
-* como-cambiar-el-color-y-forma-de-un-input-checkbox-en-html-cuando-sea-clickeado
 * [mdn | linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
 * https://es.stackoverflow.com/questions/210529/como-hacer-para-que-container 
 * [mdn | border-image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
@@ -164,6 +161,16 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 * https://www.dhiwise.com/post/mastering-nextjs-metadata-for-enhanced-web-visibility
 * https://clerk.com/blog/how-to-customize-nextjs-metadata
 
+## Rutas en next
+* https://medium.com/@ankitsingh80741/ultimate-guide-to-routing-with-the-app-router-in-next-js-14-0a19ecb67150
+> In Next.js 14, routes are automatically defined based on the folder structure inside the app/ directory. Each folder represents a new route, and the page.js file within the folder serves as the content for that route.
+
+## useRef
+* https://stackoverflow.com/questions/59198952/using-document-queryselector-in-react-should-i-use-refs-instead-how
+
+* https://stackoverflow.com/questions/54633690/how-can-i-use-multiple-refs-for-an-array-of-elements-with-hooks
+
+* https://adebola-niran.medium.com/how-to-create-multiple-refs-in-react-with-useref-5fa2bbef5d15
 
 # ACCESIBILIDAD 
 1. Texto normal (párrafos, ítems, botones, enlaces, etc.)
@@ -220,9 +227,10 @@ Background: es el color de fondo inmediato (del elemento, no de la página enter
 - [x] mixin para flexbox
 - [x] footer y header
 - [ ] rgb  conversor a # 
-- [ ] organizar code_notes
+- [x] organizar code_notes
 - [ ] filtro por años
-- [ ] +400 de zoom
+- [x] +400 de zoom
+- [ ] -25% de zoom
 - [ ] al hacer click en los filtros, que cambie el color de fondo de #filtros_input
 - [ ] separar logica de ui
 - [ ] font spartan
@@ -232,5 +240,5 @@ Background: es el color de fondo inmediato (del elemento, no de la página enter
 - [x] boton para subir y bajar en la pag
 - [ ] hasta 370 ok
 - [ ] custom hook
-- [ ] agregar metadatos
+- [x] agregar metadatos
 - [ ] icono sitio
