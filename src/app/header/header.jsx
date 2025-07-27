@@ -68,7 +68,7 @@ const Header = () => {
                                 <FontAwesomeIcon icon={faClose} />
                             </button>
                         </li>
-                        <li aria-current="Página del terciario" id='header_logo'>
+                        <li aria-current="Página del terciario" id='header__logo'>
                             <Link href="https://www.ifts18.edu.ar/home" target='#blank' >
                                 <Image src="/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
                             </Link>
