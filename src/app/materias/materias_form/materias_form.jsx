@@ -4,14 +4,13 @@ import degree_in_software_development from "/public/subjects/subjects_data.json"
 
 const Materias_Form = () => {
 
-  const [dataApi, setDataApi] = useState([]) // Para cambiar la vista
-  const [originalData, setOriginalData] = useState([]); // Para tener la copia original de los datos
+  const [dataApi, setDataApi] = useState([]) 
+  const [originalData, setOriginalData] = useState([]); 
 
   const [estadoChecked, setEstadoChecked] = useState({
     materia_promocionada: false,
     materia_pendiente: false,
     materia_cursando: false,
-    // materia_tiene_apuntes: false,
   })
 
   const fetchData = async () => {
@@ -38,9 +37,6 @@ const Materias_Form = () => {
   }, [])
 
   useEffect(() => {
-    // setDataApi Para cambiar la vista
-    // setOriginalData Para tener la copia original de los datos
-    // setFilteredData Para setear a dataApi con los filtros
     const dataFiltradaSeleccionada = []
     let finalFiltrada = [...originalData]
 
@@ -50,23 +46,18 @@ const Materias_Form = () => {
 
     if (dataFiltradaSeleccionada.length > 0) {
       finalFiltrada = finalFiltrada.filter((e, i) => {
-        // Quiero quedarme solo con las materias donde e.estado esté dentro de los valores que están marcados en los checkboxes (dataFiltradaSeleccionada)
-        if (dataFiltradaSeleccionada.includes(e.estado)) {
-          // console.log("finalFiltrada", finalFiltrada); // acá llega correctamente el nro de {}
-        }
         return dataFiltradaSeleccionada.includes(e.estado)
       })
     }
 
     if (estadoChecked.materia_tiene_apuntes) {
       finalFiltrada = finalFiltrada.filter((e) => {
-        // console.log("materia_tiene_apuntes finalFiltrada", finalFiltrada);
-        return e.tiene_apuntes  // si tiene apuntes === true, se retorna
+        return e.tiene_apuntes 
       })
     }
 
     setDataApi(finalFiltrada)
-  }, [estadoChecked]) // cambia, cuando cambia estadoChecked. Y estadoChecked es seteado, cada vez que se hace click en un checkbox. 
+  }, [estadoChecked]) 
   return (
 
     <>

@@ -160,7 +160,9 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 * https://nextjs.org/docs/app/getting-started/metadata-and-og-images
 * https://www.dhiwise.com/post/mastering-nextjs-metadata-for-enhanced-web-visibility
 * https://clerk.com/blog/how-to-customize-nextjs-metadata
-
+* https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#favicon
+* https://stackoverflow.com/questions/75674866/adding-favicon-to-nextjs-app-router-application
+* https://github.com/vercel/next.js/discussions/50704
 ## Rutas en next
 * https://medium.com/@ankitsingh80741/ultimate-guide-to-routing-with-the-app-router-in-next-js-14-0a19ecb67150
 > In Next.js 14, routes are automatically defined based on the folder structure inside the app/ directory. Each folder represents a new route, and the page.js file within the folder serves as the content for that route.

@@ -15,7 +15,7 @@
     padding-bottom: min(1rem, 8%);
     padding-left: min(1rem, 8%);
     padding-right: min(1rem, 8%);
-    margin-top: 0.625rem;
+    margin: 0.625rem 0;
     @include d-flex(column, center, start, 0, 0);
 
     @media (max-width: 1200px) {
@@ -59,6 +59,10 @@
 
     p {
       font-size: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
+      .materias__content-icon {
+        height: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
+        width: clamp(0.8rem, calc(0.5vw + 0.8rem), 1.8rem);
+      }
     }
 
     span {
@@ -71,11 +75,11 @@
         color: white;
         margin-right: 0.313rem;
         text-decoration: underline;
+      }
 
-        .materias__content-icon {
-          height: 5px;
-          width: 5px;
-        }
+      svg {
+        width: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
+        height: clamp(0.6rem, calc(0.5vw + 0.6rem), 1.6rem);
       }
     }
   }
@@ -128,7 +132,7 @@
   #materias__lista {
     width: 100%;
     flex-wrap: wrap;
-    margin: 10px 0 40px 0;
+    margin: 0px 0 40px 0;
     padding: 2rem;
     @include d-flex(row, space-evenly, center, 1.25rem, 1.875rem);
 

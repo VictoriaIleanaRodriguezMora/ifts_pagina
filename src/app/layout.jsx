@@ -17,19 +17,12 @@ const scrollCalc = (scrollTopParam, documentHeightParam) => {
   const veintePorciento = scrollMax * 0.20;
   const ochentaPorciento = scrollMax * 0.80;
 
-  // console.log("scrollTopParam:", scrollTopParam);
-  // console.log("scrollMax:", scrollMax);
-  // console.log("20%", veintePorciento);
-  // console.log("80%", ochentaPorciento);
-
   if (scrollTopParam > veintePorciento) {
-    // console.log("20% SUPERADO");
     buttonUpRef.current.className = 'button__show';
   } else {
     buttonUpRef.current.className = 'button__hide';
   }
   if (scrollTopParam > ochentaPorciento) {
-    // console.log("80% SUPERADO");
     buttonDownRef.current.className = 'button__hide';
   } else {
     buttonDownRef.current.className = 'button__show';

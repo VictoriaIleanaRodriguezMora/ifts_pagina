@@ -25,9 +25,7 @@ const Materias_List_Item = ({ ...subjectsData }) => {
                                                 <span>Código: {subject.codigo}</span>
                                                 <span>
                                                     <a href={`${basePath}${subject.link_apuntes}`} target="#">
-                                                        {/* <FontAwesomeIcon icon={faBook} /> Apuntes */}
                                                         <FontAwesomeIcon icon={faBookOpen} />  Apuntes                                                   </a>
-                                                        {/* <FontAwesomeIcon icon={faBookBookmark} />  Apuntes                                                   </a> */}
                                                 </span>
                                             </p>
                                             : null

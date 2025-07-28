@@ -16,7 +16,7 @@ export default function Materias() {
           <p>
             Empecé a cursar esta carrera en el 2do cuatrimestre del año 2024. <strong>El propósito</strong> de esta página es <i>registrar mi progreso</i> a lo largo de la carrera y compartir mis apuntes.
             <br />
-            Con el fin de ayudar a alguien que necesite apoyo, brindar otra perspectiva y/o dar un paneo general del contenido. <FontAwesomeIcon icon={faLightbulb} />
+            Con el fin de ayudar a alguien que necesite apoyo, brindar otra perspectiva y/o dar un paneo general del contenido. <FontAwesomeIcon icon={faLightbulb} className='materias__content-icon' />
           </p>
           <span>
             <a href="https://docs.google.com/document/d/1TvsNM_z6B2KHBOyKITbnY7X0KlU6BsNd/edit?tab=t.0#heading=h.h44t47frzt2n" target='#blank'>
@@ -26,19 +26,6 @@ export default function Materias() {
         </main>
 
         <Materias_Form />
-
-        {/* <div id="navegacion">
-          <button>
-            <a href="#materias__content">
-              <FontAwesomeIcon icon={faCircleArrowUp} className='navegacion__items' />
-            </a>
-          </button>
-          <button>
-            <a href="#footer">
-              <FontAwesomeIcon icon={faCircleArrowDown} className='navegacion__items' />
-            </a>
-          </button>
-        </div> */}
 
       </div>
     </>
