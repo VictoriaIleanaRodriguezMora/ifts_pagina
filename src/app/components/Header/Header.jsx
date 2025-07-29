@@ -70,7 +70,7 @@ const Header = () => {
                         </li>
                         <li aria-current="Página del terciario" id='header__logo'>
                             <Link href="https://www.ifts18.edu.ar/home" target='#blank' >
-                                <Image src="/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
+                                <Image src="/img/logo_ifts.jpg" alt="Logo terciario" width={40} height={40} />
                             </Link>
                         </li>
                         <li>

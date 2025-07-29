@@ -172,6 +172,13 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 
 * https://adebola-niran.medium.com/how-to-create-multiple-refs-in-react-with-useref-5fa2bbef5d15
 
+## Custom hook - use ref
+* https://medium.com/@erdincakdogn/using-useeffect-and-custom-hook-in-a-single-example-92967f9ee35e
+* https://youtu.be/xutmKvLsbKM?si=KRhvlMsjfVe_mOzE
+
+## Estructurar el proyecto
+![alt text](/public/docs/image.png)
+
 # ACCESIBILIDAD 
 1. Texto normal (párrafos, ítems, botones, enlaces, etc.)
    

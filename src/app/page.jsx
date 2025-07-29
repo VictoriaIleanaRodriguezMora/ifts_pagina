@@ -1,6 +1,6 @@
 // app/page.js
 
-import Materias from "./materias/materias";
+import Materias from "./components/materias/materias";
 export const metadata = {
   title:
     "Registro académico IFTS 18",

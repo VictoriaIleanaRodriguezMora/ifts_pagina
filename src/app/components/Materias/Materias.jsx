@@ -27,19 +27,6 @@ export default function Materias() {
 
         <Materias_Form />
 
-        {/* <div id="navegacion">
-          <button>
-            <a href="#materias__content">
-              <FontAwesomeIcon icon={faCircleArrowUp} className='navegacion__items' />
-            </a>
-          </button>
-          <button>
-            <a href="#footer">
-              <FontAwesomeIcon icon={faCircleArrowDown} className='navegacion__items' />
-            </a>
-          </button>
-        </div> */}
-
       </div>
     </>
   );
