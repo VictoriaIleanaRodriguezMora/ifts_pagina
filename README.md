@@ -226,7 +226,8 @@ Qué opción mirar: Se considera ilegible por lo general. Se sugiere evitar y us
 Foreground: es el color del texto o del ícono o del borde que estás evaluando.
 Background: es el color de fondo inmediato (del elemento, no de la página entera).
 
-
+### GIT
+* https://es.stackoverflow.com/questions/1267/c%C3%B3mo-modificar-el-mensaje-de-un-commit-en-particular
 
 ### 💜💡 Notas y to do: 
 - [ ] Header responsive
