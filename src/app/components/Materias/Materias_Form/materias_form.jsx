@@ -59,8 +59,8 @@ const Materias_Form = () => {
 
     setDataApi(finalFiltrada)
   }, [estadoChecked]) 
-  return (
 
+  return (
     <>
       <div id="materias__filtros">
         <h3>Filtrar por: </h3>

@@ -176,6 +176,11 @@ In React, you don't simply use checked like in HTML. Instead, you tie the checke
 * https://medium.com/@erdincakdogn/using-useeffect-and-custom-hook-in-a-single-example-92967f9ee35e
 * https://youtu.be/xutmKvLsbKM?si=KRhvlMsjfVe_mOzE
 
+- datos dinámicos o independientes por componente - Custom Hook
+- compartir el mismo dato en muchos lados - Context
+- lo mejor de los dos mundos - Custom Hook + Context
+
+
 ## Estructurar el proyecto
 ![alt text](/public/docs/image.png)
 
