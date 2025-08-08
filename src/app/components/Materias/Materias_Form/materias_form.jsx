@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react"
 import Materias_List from "./materias_list/materias_list";
 import degree_in_software_development from "/public/subjects/subjects_data.json"
+import useFetchData from "../../../hooks/useFetchData";
+import useFilterData from "../../../hooks/useFilterData";
 
 const Materias_Form = () => {
-
-  const [dataApi, setDataApi] = useState([]) // Para cambiar la vista
-  const [originalData, setOriginalData] = useState([]); // Para tener la copia original de los datos
+  const { isLoading, dataApi, setDataApi, originalData } = useFetchData()
 
   const [estadoChecked, setEstadoChecked] = useState({
     materia_promocionada: false,
@@ -14,51 +14,16 @@ const Materias_Form = () => {
     // materia_tiene_apuntes: false,
   })
 
-  const fetchData = async () => {
-    try {
-      setDataApi(await degree_in_software_development.subjects)
-      setOriginalData(await degree_in_software_development.subjects)
-    }
-    catch (e) {
-      console.log("Error al consumir API", e);
-    }
-    finally {
-      console.log("FINALLY dataApi", dataApi);
-      console.log("Finalizó la carga");
-    }
-  }
-
   const handleOnChange = async (e) => {
     const { name, checked } = e.target;
     setEstadoChecked({ ...estadoChecked, [name]: checked })
   }
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  const { finalFiltrada } = useFilterData(estadoChecked, originalData)
 
   useEffect(() => {
-    const dataFiltradaSeleccionada = []
-    let finalFiltrada = [...originalData]
-
-    if (estadoChecked.materia_promocionada) { dataFiltradaSeleccionada.push("Promocionada") }
-    if (estadoChecked.materia_pendiente) { dataFiltradaSeleccionada.push("Pendiente") }
-    if (estadoChecked.materia_cursando) { dataFiltradaSeleccionada.push("Cursando") }
-
-    if (dataFiltradaSeleccionada.length > 0) {
-      finalFiltrada = finalFiltrada.filter((e, i) => {
-        return dataFiltradaSeleccionada.includes(e.estado)
-      })
-    }
-
-    if (estadoChecked.materia_tiene_apuntes) {
-      finalFiltrada = finalFiltrada.filter((e) => {
-        return e.tiene_apuntes 
-      })
-    }
-
     setDataApi(finalFiltrada)
-  }, [estadoChecked]) 
+  }, [finalFiltrada])
 
   return (
     <>
