@@ -115,10 +115,6 @@ header {
   position: absolute;
   z-index: 4;
   right: 0;
-  svg {
-    width: 2rem;
-    height: 2rem;
-  }
 }
 #close-sidebar-button {
   display: none;
@@ -126,10 +122,5 @@ header {
   background: none;
   border: none;
   padding: 0.5rem;
-
   cursor: pointer;
-  svg {
-    width: 2rem;
-    height: 2rem;
-  }
 }

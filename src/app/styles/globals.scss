@@ -54,13 +54,20 @@ body {
   }
 }
 
-
 ::-webkit-scrollbar {
-    width: 7px;
-    opacity: 0;
+  width: 7px;
+  opacity: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: rgb(96, 84, 84);
+  border-radius: 5px;
+  background: rgb(96, 84, 84);
 }
+
+svg.svg-inline--fa {
+  width: 1.2rem;
+  height: 1.2rem;
+  max-width: 1.2rem;
+  max-height: 1.2rem;
+}
+
