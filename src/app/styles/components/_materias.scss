@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 /* Materias */
 #materias {
   @include d-flex(column, center, center, 0, 0);
