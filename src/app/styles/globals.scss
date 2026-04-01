@@ -1,4 +1,5 @@
-@use "./abstracts" as *;
+@use "./abstracts/abstracts" as *;
+
 @use "./components/materias";
 @use "./components/header";
 @use "./components/footer";
